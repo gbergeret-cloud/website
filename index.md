@@ -1,6 +1,6 @@
 ---
 title: Coming Soon
-layout: simple
+layout: banner
 ---
 
 # Coming Soon
