@@ -1,0 +1,9 @@
+<head>
+  <meta charset="utf-8">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" />
+  <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="{{ "assets/gbergeret-brandmark-white.svg" | relative_url }}" />
+</head>
