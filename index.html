@@ -1,16 +1,31 @@
 ---
-title: Coming Soon
+title: Coming Soon by GBergeret Cloud Services
 layout: banner
 ---
 
-<style type="text/css" media="screen">
-  h1 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-  }
-</style>
+<div id="particles-js">
+  <div class="header">
+    <h1>
+      <span class="site-title">Coming Soon</span>
+      <span class="site-description">by {{ site.company.name }}</span>
+    </h1>
 
-<h1>Coming Soon</h1>
+    <div class="header-icons">
+      {% if site.author.email %}
+      <a aria-label="Send email" href="mailto:{{ site.company.email }}"><i class="icon fa fa-envelope"></i></a>
+      {% endif %}
+      {% if site.author.phone %}
+      <a aria-label="Call" href="tel:{{ site.author.phone }}"><i class="icon fa fa-phone" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.company.github %}
+      <a aria-label="Github" target="_blank" href="https://github.com/{{ site.company.github}}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.company.linkedin %}
+      <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/company/{{ site.company.linkedin }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+      {% endif %}
+    </div>
+    <div class="header-links">
+      <a class="link" target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">About Me</a>
+    </div>
+  </div>
+</div>
