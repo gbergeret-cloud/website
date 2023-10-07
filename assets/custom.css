@@ -1,0 +1,41 @@
+/* Override detault balises */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* CSS for Navigation Bar */
+#navbar ul {
+  text-align: center;
+  width: 100%;
+  position:fixed;
+}
+
+#navbar li {
+  list-style-type: none;
+  display: inline;
+}
+
+#navbar li a {
+  border: 2px solid black;
+  border-radius: 25px;
+  display: inline-block; /* « Last bit of magic. */
+  width: 8em;
+  margin: 8px 15px;
+  padding: 2px;
+  font-size: 15px;
+}
+
+#navbar li img {
+  width: 4em;
+}
