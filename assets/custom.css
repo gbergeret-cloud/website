@@ -29,7 +29,7 @@ a, a:hover {
 #navbar li a {
   border: 2px solid black;
   border-radius: 25px;
-  display: inline-block; /* « Last bit of magic. */
+  display: inline-block;
   width: 8em;
   margin: 8px 15px;
   padding: 2px;
@@ -54,13 +54,18 @@ a, a:hover {
 }
 
 /* CSS for Website Footer */
-#footer {
+footer {
   background-color: black;
   padding: 0px;
   min-height: 150px;
   margin: 0 auto -100px;
 }
 
-#footer * {
+footer * {
   color: white;
+}
+
+footer #credit {
+  margin: 4em auto;
+  text-align: center;
 }
