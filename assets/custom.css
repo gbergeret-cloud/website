@@ -41,7 +41,7 @@ a, a:hover {
 }
 
 /* CSS for Index Page */
-#page-index {
+.banner {
   min-height: calc(98vh);
   padding: 50px;
   display: flex;
@@ -49,8 +49,8 @@ a, a:hover {
   justify-content: center;
 }
 
-#title {
-  font-size: 60px;
+.banner .title {
+  font-size: 4em;
 }
 
 /* CSS for Website Footer */
