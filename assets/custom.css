@@ -39,3 +39,28 @@ a, a:hover {
 #navbar li img {
   width: 4em;
 }
+
+/* CSS for Index Page */
+#page-index {
+  min-height: calc(98vh);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 60px;
+}
+
+/* CSS for Website Footer */
+#footer {
+  background-color: black;
+  padding: 0px;
+  min-height: 150px;
+  margin: 0 auto -100px;
+}
+
+#footer * {
+  color: white;
+}
