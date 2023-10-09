@@ -1,7 +1,8 @@
 /* Override detault balises */
 body {
-  height: 100%;
   margin: 0;
+  font-family: Verdana;
+  font-size: 16px;
 }
 
 ul {
@@ -18,7 +19,7 @@ a, a:hover {
 #navbar ul {
   text-align: center;
   width: 100%;
-  position:fixed;
+  position: fixed;
 }
 
 #navbar li {
@@ -56,16 +57,36 @@ a, a:hover {
 /* CSS for Website Footer */
 footer {
   background-color: black;
-  padding: 0px;
-  min-height: 150px;
-  margin: 0 auto -100px;
 }
 
-footer * {
+footer li {
+  list-style-type: none;
+}
+
+footer *, footer a:hover {
   color: white;
 }
 
-footer #credit {
-  margin: 4em auto;
+#footer {
+  padding: 4em 8em;
+  margin: auto;
+  max-width: 1600px;
+}
+
+#footer-logo {
+  padding: 0;
+}
+
+#company-details a, #credit a {
+  text-decoration: underline;
+}
+
+#credit {
+  padding: 1em;
   text-align: center;
+  font-size: 14px;
+}
+
+#credit p {
+  margin: 0;
 }
