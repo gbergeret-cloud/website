@@ -31,6 +31,11 @@ author:
 
 company:
   name: GBergeret Cloud Services
+  number: 12543938
+  address:
+    - 85 Great Portland Street, First Floor,
+    - London, W1W 7LT, United Kingdom
+  vat_number: GB353207815
   email: contact@gbergeret.cloud
   linkedin: gbergeret-cloud
   github: gbergeret-cloud
