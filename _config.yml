@@ -37,6 +37,7 @@ exclude:
   - vendor/ruby/
   - .docker-compose.yml
   - CNAME
+  - README.md
 
 collections:
   posts:

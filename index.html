@@ -49,10 +49,48 @@ permalink: /
   </div>
 
   <div id="blog-preview" class="wrapper preview">
-    <h2 class="plus">Our <i>blog</i></h2>
+    <h2 class="plus"><i>Blog</i></h2>
+    <p>News, ideas and case studies from the worlds of cloud and DevSecOps.</p>
+
+    <div class="posts-preview">
+      {% for post in site.posts %}
+      <div class="post-preview">
+        <img src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI" alt="white company logo" width="30" height="36">
+        <a href="{{post.url}}"> {{ post.title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="see-more">See more</p>
   </div>
 
   <div id="contact" class="wrapper preview">
     <h2>What to have a <i>chat?</i></h2>
+    <p>
+      Get in touch with me by email at {{ site.company.email }} <br />
+      or via the details below.
+    </p>
+    <p>
+      Let's catch up over a coffee or a call, <br />
+      to get to know each other and see how we could work together.
+    </p>
+
+    <ul id="contact-icons">
+      <li>
+        <a href="mailto:{{ site.company.email }}">
+          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+        </a>
+      </li>
+      <li>
+        <a href="tel:{{ site.author.phone }}">
+          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+        </a>
+      </li>
+      <li>
+        <a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}">
+          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
