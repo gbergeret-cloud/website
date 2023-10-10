@@ -21,14 +21,18 @@ a, a:hover {
 }
 
 #navbar ul {
-  text-align: center;
-  width: 100%;
   position: fixed;
+  width: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
+  background-color: white;
+  text-align: center;
 }
 
 #navbar li {
   list-style-type: none;
   display: inline;
+  vertical-align: middle;
 }
 
 #navbar li a {
@@ -42,12 +46,14 @@ a, a:hover {
 }
 
 #navbar li a:hover {
+  color: black;
   border: 2px solid black;
   border-radius: 25px;
 }
 
 #navbar li img {
-  width: 4em;
+  width: 5em;
+  vertical-align: middle;
 }
 
 /* CSS for Index Page */
@@ -68,10 +74,12 @@ a, a:hover {
 
 .banner h1.title {
   font-size: 60pt;
+  margin: 20px 0 10px 0;
 }
 
 .banner h2.title {
   font-size: 40pt;
+  margin: 20px 0 10px 0;
 }
 
 /* CSS for Website Footer */
@@ -83,6 +91,10 @@ footer li {
   list-style-type: none;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer *, footer a:hover {
   color: white;
 }
@@ -91,6 +103,13 @@ footer *, footer a:hover {
   padding: 4em 8em;
   margin: auto;
   max-width: 1600px;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+#footer > div {
+  width: 33.33333%;
+  float: left;
 }
 
 #footer-logo {
@@ -105,8 +124,4 @@ footer *, footer a:hover {
   padding: 0.5em;
   text-align: center;
   font-size: 14px;
-}
-
-#credit p {
-  margin: 0;
 }
