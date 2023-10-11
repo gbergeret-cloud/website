@@ -45,7 +45,7 @@ exclude:
 collections:
   posts:
     output: true
-    permalink: /blog/en/:year/:month/:day/:title:output_ext
+    permalink: /blog/:year/:month/:day/:title:output_ext
 
 defaults:
   - scope:

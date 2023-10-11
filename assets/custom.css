@@ -111,6 +111,8 @@ button {
   border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   font-weight: 700;
+  font-size: 1rem;
+  font-family: Verdana;
   min-width: 6.25rem;
   border: 0;
   cursor: pointer;
@@ -1059,4 +1061,257 @@ footer a:hover {
     padding: 0 1em 1rem 1rem;
     font-size: 14px;
   }
+}
+
+/* CSS Blog Posts */
+#blog-post {
+    color:#787878;
+    letter-spacing: -0.012em;
+    padding-top:0;
+    padding-bottom:80px;
+}
+
+/* blog head */
+
+#blog-post #blog-head{
+    max-width:1080px;
+    margin:auto;
+    padding:76px 0 64px 0;
+    display:flex;
+    flex-direction:column;
+    grid-gap:24px;
+    align-items:center;
+}
+
+#blog-post #blog-head img{
+    max-width:904px;
+    margin-top:-24px;
+    margin-bottom:32px;
+}
+
+#blog-post #blog-meta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-gap:16px;
+}
+
+#blog-post #reading-time{
+    font-weight:bold;
+    color:#222222;
+    padding:5px 12px;
+    border-radius:20px;
+    border:1px solid #888888;
+}
+
+/* blog content */
+
+#blog-post h1,
+#blog-post h2,
+#blog-post h3,
+#blog-post h4,
+#blog-post h5,
+#blog-post h6{
+    color:#222222;
+    line-height:1.2;
+    margin:1.5em 0 16px 0;
+    letter-spacing:0em;
+}
+
+#blog-post h1{
+    font-size:64px;
+    text-align:center;
+    margin:0;
+}
+
+#blog-post h2{
+    font-size:40px;
+}
+
+#blog-post h3{
+    font-size:24px;
+}
+
+#blog-post h2 + h3{
+    margin-top:0;
+}
+
+#blog-post h4,
+#blog-post h5,
+#blog-post h6{
+    font-size:16px;
+}
+
+#blog-post a{
+    font-weight:bold;
+    color:#5A99BF;
+    text-decoration:underline;
+}
+
+#blog-post img{
+    font-style:italic;
+    vertical-align:middle;
+    height:auto;
+    max-width:100%;
+}
+
+#blog-post #blog-content{
+    max-width:840px;
+    margin:auto;
+    line-height:1.5;
+}
+
+#blog-post #blog-content p{
+    margin-bottom:1.5em;
+}
+
+#blog-post #blog-content .image{
+    width:calc(100% + 64px);
+    margin:2rem 0 2rem -32px;
+    display:grid;
+    justify-content:center;
+    grid-gap:8px;
+}
+
+#blog-post .image img.border{
+    border:1px solid #ddd;
+}
+
+#blog-post .image .caption{
+    margin:0 32px;
+    text-align:center;
+    font-style:italic;
+    font-size:14px;
+}
+
+#blog-post blockquote{
+    padding:24px 64px;
+    margin:0;
+    position:relative;
+}
+
+#blog-post blockquote::before,
+#blog-post blockquote::after {
+    content:'';
+    width:21px;
+    height:18px;
+    position:absolute;
+    background-image: url("/assets/img/quote.svg")
+}
+
+#blog-post blockquote::before{
+    top:26px;
+    left:30px;
+}
+
+#blog-post blockquote::after{
+    bottom:52px;
+    right:30px;
+    transform:rotate(180deg);
+}
+
+#blog-post ul{
+    padding:0 0 0 16px;
+    margin:0 0 1.5em 0;
+}
+
+/* authors */
+
+#blog-post #blog-authors{
+    margin:64px 0;
+}
+
+#blog-post #blog-authors .wrap{
+    grid-gap:24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#blog-post #blog-authors #written-by{
+    font-size:14px;
+    color:#A5A5A5;
+}
+
+#blog-post #blog-authors h3{
+    margin:0;
+}
+
+#blog-post #blog-authors .job-title{
+    font-size:14px;
+    line-height:1;
+}
+
+#blog-post #blog-authors .author{
+    display:grid;
+    grid-template-columns:80px 1fr;
+    align-items:center;
+    grid-gap:16px;
+    position:relative;
+}
+
+#blog-post #blog-authors .x{
+    width:18px;
+    height:18px;
+    background-image: url("/assets/img/x.svg");
+    background-size:cover;
+}
+
+#blog-post #blog-authors .profile{
+    width:80px;
+    height:80px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:#eee;
+    border-radius:100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #blog-post,
+    #blog-post p{
+        font-size:14px;
+    }
+
+    #blog-post h1{
+        font-size:32px;
+    }
+
+    #blog-post h2{
+        font-size:24px;
+    }
+
+    #blog-post h3{
+        font-size:16px;
+    }
+
+    #blog-post #blog-head{
+        padding:40px 0 48px 0;
+    }
+
+    #blog-post #blog-head img{
+        width:100vw;
+        max-width:none;
+        margin-top:-40px;
+    }
+
+    #blog-post blockquote {
+        padding: 24px 32px;
+    }
+
+    #blog-post blockquote::before {
+        left: 0;
+    }
+
+    #blog-post blockquote::after {
+        right: 0;
+    }
+
+    #blog-post #blog-authors .wrap{
+        flex-direction:column;
+        align-items:start;
+    }
+
+    #blog-post #blog-authors .x{
+        display:none;
+    }
 }

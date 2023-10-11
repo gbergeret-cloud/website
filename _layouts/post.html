@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    <div id="blog-post" class="page wrapper">
+      <div id="blog-head">
+        {% if page.cover != nil %}
+        <div class="image">
+          <img src="{{ page.cover.src }}" alt="{{ page.cover.alt }}">
+        </div>
+        {% endif %}
+
+        <h1>{{ page.title }}</h1>
+
+        <div id="blog-meta">
+          <div id="blog-date">
+            {{ page.date | date: "%b %d, %Y" }}
+          </div>
+          <div id="reading-time">
+            {{ page.reading_time }} min read
+          </div>
+        </div>
+      </div>
+      <div id="blog-content">
+        {{ content }}
+        <div id="blog-authors">
+          <p id="written-by">Written by:</p>
+
+          <div class="wrap">
+          {% assign authors_count = page.authors | size %}
+          {% for author in page.authors %}
+            <div class="author">
+              <div class="profile" \
+                style="background-image:url('{{author.picture}}')"></div>
+              <div class="name">
+                <h3>{{ author.name }}</h3>
+                <span class="job-title">{{ author.title }}</span>
+              </div>
+            </div>
+
+            {% if authors_count > 1 and  forloop.last == false %}
+            <div class="x"></div>
+            {% endif %}
+          {% endfor %}
+          </div>
+        </div>
+
+        <a href="{{ site.url }}/blog">
+          <button class="see-more">See all articles</button>
+        </a>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
+
