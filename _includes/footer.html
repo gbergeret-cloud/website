@@ -16,8 +16,7 @@
         </ul>
     </div>
 
-    <div id="company-details">
-      <p>
+    <address id="company-details">
         <a href="https://find-and-update.company-information.service.gov.uk/company/{{ site.company.number }}">
           {{ site.company.name | upcase }}<br />
         </a>
@@ -26,8 +25,7 @@
           {{ i }}</br />
         {% endfor %}
         VAT number {{ site.company.vat_number }}<br />
-      </p>
-    </div>
+    </address>
   </div>
 
   <div id="credit">
