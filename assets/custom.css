@@ -124,16 +124,18 @@ footer *, footer a:hover {
 }
 
 #footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
   padding: 4em 8em;
   margin: auto;
   max-width: 1600px;
-  overflow: hidden;
   line-height: 1.4;
 }
 
 #footer > div {
-  width: 33.33333%;
-  float: left;
+  flex-basis: 31%;
 }
 
 #footer-logo {
