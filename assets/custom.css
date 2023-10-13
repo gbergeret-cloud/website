@@ -44,26 +44,27 @@ address {
 }
 
 /* CSS for Navigation Bar */
-#navbar {
+nav {
+  position: sticky;
+  top: 0px;
   margin: 0.5em 0;
+  background-color: white;
 }
 
-#navbar ul {
-  position: fixed;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin-top: -100px;
-  padding-top: 100px;
-  background-color: white;
   text-align: center;
 }
 
-#navbar li {
+nav li {
   list-style-type: none;
-  display: inline;
-  vertical-align: middle;
 }
 
-#navbar li a {
+nav li a {
   display: inline-block;
   width: 10em;
   margin: 8px 15px;
@@ -73,20 +74,20 @@ address {
   border: 2px solid transparent;
 }
 
-#navbar li a:hover {
+nav li a:hover {
   color: black;
   border: 2px solid black;
   border-radius: 25px;
 }
 
-#navbar li img {
+nav li img {
   width: 5em;
   vertical-align: middle;
 }
 
 /* CSS for Index Page */
 .banner {
-  min-height: calc(98vh);
+  min-height: calc(90vh);
   padding: 50px;
   display: flex;
   flex-direction: column;
