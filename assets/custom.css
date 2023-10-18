@@ -28,13 +28,12 @@ h6 {
   font-family: Montserrat;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 60pt;
   margin: 20px 0 10px 0;
 }
 
-h3 {
+h2 {
   font-size: 40pt;
   margin: 20px 0 10px 0;
 }
