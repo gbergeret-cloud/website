@@ -74,6 +74,7 @@ nav ul {
   align-items: center;
   width: 100%;
   text-align: center;
+  gap: 6.25rem
 }
 
 nav li {
@@ -82,7 +83,7 @@ nav li {
 
 nav li a {
   display: inline-block;
-  width: 10em;
+  width: 6.25rem;
   padding: 2px;
   color: #787878;
   border: 2px solid transparent;
@@ -94,8 +95,18 @@ nav li a:hover {
   border-radius: 25px;
 }
 
-nav li img {
-  /* vertical-align: middle; */
+
+nav ul {
+  height: 2rem;
+}
+
+nav li:not(.menu-element) {
+  display: none;
+  width: 20px;
+}
+
+nav .logo {
+  height: 2rem;
 }
 
 /* CSS for Index Page */
@@ -164,10 +175,4 @@ footer *, footer a:hover {
   padding: 0.5em;
   text-align: center;
   font-size: 14px;
-}
-
-
-nav .logo {
-  visibility: hidden;
-  height: 2rem;
 }
