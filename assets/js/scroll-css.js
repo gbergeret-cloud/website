@@ -19,41 +19,81 @@ const debounce = (fn) => {
 };
 
 const nav = document.querySelector("nav");
-const smallLogo = document.querySelector("nav .logo");
+const smallLogoListItem = document.querySelector("nav li:not(.menu-element");
 const logo = document.querySelector("#index-page .logo");
+
+const menuElementsLeft = document.querySelectorAll("nav li.menu-element.left");
+const menuElementsRight = document.querySelectorAll(
+  "nav li.menu-element.right"
+);
 
 const logoheight = 90; //px
 const navlogoheight = 32; //px
-const navbarHeight = 72; //px
+const navbarHeight = 52; //px not counting the bottom padding height - padding-bottom
+const smallLogoWidth = 20; //px
+const gap = 100; // px
+const displacementMax = (smallLogoWidth + gap) / 2; //px
 
 const logoBottomPointLimit = navbarHeight + logoheight;
 
-const sizeCoef = logoheight / (logoheight - navlogoheight);
+const heightCoef = logoheight / (logoheight - navlogoheight);
 
-const updateTransform = () => {
-  const boundingRect = logo.getBoundingClientRect();
-  const bottomPosition = boundingRect.bottom;
+const displacementCoef = logoheight / displacementMax;
+
+const setLogoInNavBar = () => {
+  //when the logo is in the navbar
+  nav.style.background = "white";
+  nav.style.boxShadow = "0px 4px 20px 0px rgba(0, 0, 0, 0.05)";
+  nav.style.transition = "box-shadow 0.3s linear 0s";
+  smallLogoListItem.style.display = "list-item";
+  menuElementsLeft.forEach((element) => {
+    element.style.transform = `translateX(0px)`;
+  });
+  menuElementsRight.forEach((element) => {
+    element.style.transform = `translateX(0px)`;
+  });
+};
+
+const calculateNewIconAndMenuPosition = () => {
+  if (!logo) {
+    setLogoInNavBar();
+    return;
+  }
+  const bottomPosition = logo.getBoundingClientRect().bottom;
 
   if (bottomPosition <= logoBottomPointLimit) {
-    const size =
-      bottomPosition < navbarHeight
-        ? navlogoheight
-        : logoheight - (logoBottomPointLimit - bottomPosition) / sizeCoef;
+    //calculate and refresh the values while transitionning
+    const height =
+      logoheight - (logoBottomPointLimit - bottomPosition) / heightCoef;
 
-    logo.style.height = `${size}px`;
+    logo.style.height = `${height}px`;
+
+    const displacement =
+      (logoBottomPointLimit - bottomPosition) / displacementCoef;
+
+    menuElementsLeft.forEach((element) => {
+      element.style.transform = `translateX(-${displacement}px)`;
+    });
+    menuElementsRight.forEach((element) => {
+      element.style.transform = `translateX(${displacement}px)`;
+    });
   } else {
-    logo.style.height = `${logoheight}px`;
+    //reset to initial state when scroll up
+    logo.style.height = "";
   }
 
   if (bottomPosition <= navbarHeight) {
-    nav.style.background = "white";
-    smallLogo.style.visibility = "visible";
-    logo.style.height = `0px`;
-    logo.style.minHeight = "0px";
+    setLogoInNavBar();
   } else {
+    //when logo is in the landing page or in transitions
     nav.style.background = "transparent";
-    smallLogo.style.visibility = "hidden";
+    nav.style.boxShadow = "";
+    smallLogoListItem.style.display = "none";
   }
 };
 
-window.addEventListener("scroll", debounce(updateTransform), { passive: true });
+window.addEventListener("scroll", debounce(calculateNewIconAndMenuPosition), {
+  passive: true,
+});
+
+calculateNewIconAndMenuPosition();
