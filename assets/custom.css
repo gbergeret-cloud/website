@@ -74,6 +74,7 @@ nav {
   height: 4.5rem;
   padding: 1.25em 0;
   overflow: hidden;
+  background: white;
 }
 
 nav ul {
