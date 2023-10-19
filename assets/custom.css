@@ -71,9 +71,12 @@ nav {
   position: sticky;
   top: 0px;
   height: 4.5rem;
-  padding: 1.25em 0;
+  padding: 1.25em;
   overflow: hidden;
   background: white;
+}
+nav .mobile-header {
+  display: none;
 }
 
 nav ul {
@@ -83,14 +86,15 @@ nav ul {
   align-items: center;
   width: 100%;
   text-align: center;
-  gap: 6.25rem
+  gap: 6.25rem;
+  height: 2rem;
 }
 
 nav li {
   list-style-type: none;
 }
 
-nav li a {
+nav li.menu-element a {
   display: inline-block;
   width: 6.25rem;
   padding: 2px;
@@ -98,16 +102,12 @@ nav li a {
   border: 2px solid transparent;
 }
 
-nav li a:hover {
+nav li.menu-element a:hover {
   color: black;
   border: 2px solid black;
   border-radius: 25px;
 }
 
-
-nav ul {
-  height: 2rem;
-}
 
 nav li:not(.menu-element) {
   display: none;
@@ -118,6 +118,69 @@ nav .logo {
   height: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  nav {
+    background: white;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s linear 0s;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2rem
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav li:not(.menu-element) {
+    display: none;
+  }
+
+  nav .mobile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  nav .mobile-header img, nav .mobile-header svg {
+    height: 2rem;
+  }
+
+  #navbar-x-icon{
+    display: none;
+  }
+
+  nav.open {
+    transition: all 0.5s ease-in-out 0s;
+    height: 100vh;
+  }
+
+  nav.open #navbar-x-icon{
+    display: block;
+  }
+
+  nav.open #navbar-bar-icon{
+    display: none;
+  }
+
+  nav.open ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2.75rem
+  }
+
+  nav li {
+    font-size: 2rem;
+  }
+
+  nav li.menu-element a {
+    width: 11rem;
+  }
+}
 /* CSS for Index Page */
 .banner {
   min-height: calc(100vh - 4.5rem);
@@ -184,4 +247,24 @@ footer *, footer a:hover {
   padding: 0.5em;
   text-align: center;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1600px;
+    line-height: 1.4;
+  }
+
+  #credit {
+    padding: 0rem 2em 2rem 2rem;
+    text-align: left;
+    font-size: 14px;
+  }
 }
