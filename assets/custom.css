@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Verdana;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   scroll-behavior: smooth;
 }
@@ -59,6 +59,7 @@ a, a:hover {
 }
 
 p {
+  font-size: 1rem;
   color: #787878;
 }
 
@@ -78,11 +79,6 @@ address {
 
 .text-xl {
   font-size: 2rem;
-}
-
-.text {
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .text-xs {
