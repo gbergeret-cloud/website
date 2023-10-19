@@ -19,7 +19,9 @@ const debounce = (fn) => {
 };
 
 const nav = document.querySelector("nav");
-const smallLogoListItem = document.querySelector("nav li:not(.menu-element");
+const smallLogoListItem = document.querySelector(
+  "nav ul li:not(.menu-element)"
+);
 const logo = document.querySelector("#index-page .logo");
 
 const menuElementsLeft = document.querySelectorAll("nav li.menu-element.left");
@@ -55,6 +57,14 @@ const setLogoInNavBar = () => {
 };
 
 const calculateNewIconAndMenuPosition = () => {
+  if (window.matchMedia("only screen and (max-width: 768px)").matches) {
+    nav.style.background = "white";
+    nav.style.boxShadow = "0px 4px 20px 0px rgba(0, 0, 0, 0.05)";
+    nav.style.transition = "box-shadow 0.3s linear 0s";
+    smallLogoListItem.style.display = "none";
+    logo.style.height = "";
+    return;
+  }
   if (!logo) {
     setLogoInNavBar();
     return;

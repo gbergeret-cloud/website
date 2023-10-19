@@ -1,9 +1,22 @@
 <nav>
+  <div class="mobile-header">
+    <a href="{{ site.url }}#landing" >
+      <img src="{{ "assets/gbergeret-logo-fullcolor.svg" | relative_url }}" alt="fullcolor company logo" />
+    </a>
+    <div id="navbar-bar-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div id="navbar-x-icon">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
   <ul>
     <li class="menu-element left"><a href="{{ site.url }}#about">About Me</a></li>
     <li class="menu-element left"><a href="{{ site.url }}#services">Services</a></li>
     <li>
-      <img class="logo" src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" alt="fullcolor company logo" />
+      <a href="{{ site.url }}#landing" >
+        <img class="logo" src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" alt="fullcolor company logo" />
+      </a>
     </li>
     <li class="menu-element right"><a href="{{ site.url }}#contact">Contact</a></li>
     <li class="menu-element right"><a href="{{ site.url }}#blog">Blog</a></li>
