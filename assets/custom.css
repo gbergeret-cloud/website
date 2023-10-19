@@ -97,6 +97,19 @@ address {
   font-style: normal;
 }
 
+.wrapper {
+  padding: 6.25rem 8rem;
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 4.75rem 2rem;
+  }
+}
+
+
 /* CSS for text */
 
 .plus:before {
@@ -231,12 +244,17 @@ nav .logo {
 
 .banner {
   min-height: calc(100vh - 4.5rem);
-  padding: 50px;
+}
+
+.banner > div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 2.75rem;
+  max-width: 51rem;
+  margin: auto;
 }
 
 .banner .title {
@@ -251,6 +269,53 @@ nav .logo {
 
 .banner h3 {
  font-weight: 400;
+}
+
+.banner p {
+  margin: auto;
+}
+
+#scroll-indicator{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-weight: 700;
+  gap: 0.5rem;
+  transform: rotate(90deg);
+  position: fixed;
+  top:60%;
+  left: 5%
+}
+
+#scroll-indicator.hidden{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .banner .logo{
+    height: 3rem;
+  }
+
+  .banner .title {
+    text-align: left;
+    font-weight: bold;
+    font-family: Montserrat;
+  }
+
+  #scroll-indicator{
+    display: none;
+  }
 }
 
 /* CSS for Website Footer */

@@ -29,6 +29,8 @@ const menuElementsRight = document.querySelectorAll(
   "nav li.menu-element.right"
 );
 
+const scrollIndicator = document.querySelector("#scroll-indicator");
+
 const logoheight = 90; //px
 const navlogoheight = 32; //px
 const navbarHeight = 52; //px not counting the bottom padding height - padding-bottom
@@ -65,6 +67,13 @@ const calculateNewIconAndMenuPosition = () => {
     logo.style.height = "";
     return;
   }
+
+  if (window.scrollY > 0) {
+    scrollIndicator.classList.add("hidden");
+  } else {
+    scrollIndicator.classList.remove("hidden");
+  }
+
   if (!logo) {
     setLogoInNavBar();
     return;
