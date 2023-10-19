@@ -1,3 +1,7 @@
+.preview {
+  display: none !important;
+}
+
 /* Override detault balises */
 html,
 body {
@@ -182,6 +186,7 @@ nav .logo {
   }
 }
 /* CSS for Index Page */
+
 .banner {
   min-height: calc(100vh - 4.5rem);
   padding: 50px;
