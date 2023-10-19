@@ -59,6 +59,12 @@ const setLogoInNavBar = () => {
 };
 
 const calculateNewIconAndMenuPosition = () => {
+  if (window.scrollY > 0) {
+    scrollIndicator.classList.add("hidden");
+  } else {
+    scrollIndicator.classList.remove("hidden");
+  }
+
   if (window.matchMedia("only screen and (max-width: 768px)").matches) {
     nav.style.background = "white";
     nav.style.boxShadow = "0px 4px 20px 0px rgba(0, 0, 0, 0.05)";
@@ -66,12 +72,6 @@ const calculateNewIconAndMenuPosition = () => {
     smallLogoListItem.style.display = "none";
     logo.style.height = "";
     return;
-  }
-
-  if (window.scrollY > 0) {
-    scrollIndicator.classList.add("hidden");
-  } else {
-    scrollIndicator.classList.remove("hidden");
   }
 
   if (!logo) {
