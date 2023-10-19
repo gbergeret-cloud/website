@@ -235,12 +235,49 @@ footer *, footer a:hover {
   flex-basis: 31%;
 }
 
-#footer-logo {
-  padding: 0;
+#footer #company-socials {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#footer #social-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  color: white
+}
+
+#footer #social-icons svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#footer #social-icons svg path{
+  fill: currentColor
+}
+
+#footer .logo {
+  width: 7.75rem;
+}
+
+#footer .logo-mobile {
+  height: 2rem;
+  display: none;
 }
 
 #company-details a, #credit a {
   text-decoration: underline;
+}
+
+#company-legals{
+  min-width: 10rem;
+}
+
+#company-details {
+  min-width: 18.5rem;
 }
 
 #credit {
@@ -249,6 +286,11 @@ footer *, footer a:hover {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1024px) {
+  #footer {
+    padding: 3em 6em;
+  }
+}
 @media only screen and (max-width: 768px) {
 
   #footer {
@@ -260,6 +302,27 @@ footer *, footer a:hover {
     margin: auto;
     max-width: 1600px;
     line-height: 1.4;
+  }
+
+  #footer #company-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer .logo{
+    display: none;
+  }
+
+  #footer .logo-mobile {
+    display: inline-block;
+    height: 3rem;
+  }
+
+  #company-details {
+    min-width: 10rem;
   }
 
   #credit {

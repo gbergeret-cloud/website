@@ -1,12 +1,14 @@
 <footer>
   <div id="footer">
-    <div id="footer-logo">
-      <img src="{{ "assets/gbergeret-logo-white.svg" | relative_url }}" width=123 alt="white company logo">
-
-      <ul>
+    <div id="company-socials">
+      <a href="{{ site.url}}#landing">
+        <img class="logo" src="{{ "assets/gbergeret-logo-white.svg" | relative_url }}" alt="white company logo">
+        <img class="logo-mobile"src="{{ "assets/gbergeret-brandmark-white.svg" | relative_url }}" alt="white company logo">
+      </a>
+      <ul id="social-icons">
           <li>
             <a href="https://www.linkedin.com/company/{{ site.company.linkedin }}">
-              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
           <li>
@@ -18,13 +20,12 @@
           </li>
           <li>
             <a href="https://github.com/{{ site.company.github }}">
-              <i class="fa-brands fa-github-alt" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-github-alt"></i>
             </a>
           </li>
         </ul>
     </div>
-
-    <div>
+    <div id="company-legals">
         <ul>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="https://docs.google.com/document/d/1EcbinSpcf63bjI1nEtlx36b3nMtwtWUBjid4ory5fZo">Terms of Business</a></li>
