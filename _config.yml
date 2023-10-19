@@ -1,7 +1,10 @@
 ---
 title: GBergeret Cloud Services
-baseurl: ""
+description: |
+  GBergeret cloud Services website, a place to share my values, background,
+  skills and contact details.
 url: "https://gbergeret.cloud"
+baseurl: ""
 
 author:
   name: Geoffrey Bergeret
