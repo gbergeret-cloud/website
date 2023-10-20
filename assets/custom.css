@@ -125,6 +125,10 @@ address {
   font-size: 2rem;
 }
 
+.text-s {
+  font-size: 0.875rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
