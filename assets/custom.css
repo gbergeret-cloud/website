@@ -38,6 +38,7 @@ h6 {
 h1,
 h2 {
   font-size: 3.75rem;
+  line-height: 3.75rem;
 }
 
 h3 {
@@ -127,8 +128,29 @@ address {
 
 /* CSS for text */
 
+.plus{
+  position: relative;
+  margin-left: 3.25rem;
+  z-index: -1; /*makes text stay under the navbar*/
+}
+
 .plus:before {
-  content: "+ ";
+  content: '+';
+  position: absolute;
+  left: -3.5rem;
+  text-align: left;
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .plus{
+    margin-left: 2.25rem;
+  }
+
+  .plus:before {
+    left: -2.5rem;
+    font-size: 3.675rem;
+  }
 }
 
 .text-light-grey {
@@ -458,6 +480,14 @@ nav .logo {
   grid-area: illustration
 }
 
+.column-2 .image-cover {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-area: illustration
+}
+
 @media only screen and (max-width: 1024px) {
   .column-2 {
     gap: 5%;
@@ -490,6 +520,11 @@ nav .logo {
   .column-2 .illustration {
     background-position: center bottom;
   }
+
+  .column-2 .image-cover {
+    background-size: contain;
+  }
+
 }
 
 /* CSS for Index Page - contact */
