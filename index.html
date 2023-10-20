@@ -97,8 +97,8 @@ permalink: /
     <p>
       Get in touch with me by email at {{ site.company.email }} <br />
       or via the details below.
-    </p>
-    <p>
+      <br/>
+      <br/>
       Let's catch up over a coffee or a call, <br />
       to get to know each other and see how we could work together.
     </p>
@@ -106,17 +106,20 @@ permalink: /
     <ul>
       <li>
         <a href="mailto:{{ site.company.email }}">
-          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+          <!-- <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+          <i class="fa-solid fa-envelope"></i>
         </a>
       </li>
       <li>
         <a href="tel:{{ site.author.phone }}">
-          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+          <!-- <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+          <i class="fa-solid fa-mobile-screen-button"></i>
         </a>
       </li>
       <li>
         <a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}">
-          <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
+          <!-- <img src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+          <i class="fa-solid fa-address-card"></i>
         </a>
       </li>
     </ul>
