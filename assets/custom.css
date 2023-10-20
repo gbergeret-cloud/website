@@ -380,6 +380,34 @@ nav .logo {
     }
   }
 
+/* CSS for Index Page - contact */
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#contact h2 , #contact p {
+  text-align: center;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem 10rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact ul {
+    gap: 1.5rem 7rem;
+  }
+}
+
 /* CSS for Website Footer */
 footer {
   background-color: black;
