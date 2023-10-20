@@ -402,6 +402,12 @@ nav .logo {
   justify-content: center;
 }
 
+#contact img, #contact svg{
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 768px) {
   #contact ul {
     gap: 1.5rem 7rem;
