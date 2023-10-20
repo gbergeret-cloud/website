@@ -36,6 +36,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .docker-compose.yml
+  - .git
+  - .github
+  - .editorconfig
   - CNAME
   - README.md
 
