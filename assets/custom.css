@@ -32,7 +32,7 @@ h5,
 h6 {
   font-family: Montserrat;
   font-weight: 700;
-  margin: 0px;
+  margin: 0;
 }
 
 h1,
@@ -49,7 +49,12 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
-  h1, h2, h3, h4, h5, h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-align: left;
   }
 
@@ -77,14 +82,15 @@ ul {
   padding: 0;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: black;
   text-decoration: none;
 }
 
 p {
   font-size: 1rem;
-  margin: 0px
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,7 +121,7 @@ address {
 
 @media only screen and (max-width: 768px) {
   .wrapper {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }
 
@@ -125,11 +131,11 @@ address {
   content: "+ ";
 }
 
-.text-light-grey{
+.text-light-grey {
   color: #787878;
 }
 
-.text-dark-grey{
+.text-dark-grey {
   color: #5A5A5A;
 }
 
@@ -142,7 +148,8 @@ address {
 }
 
 /* Class unused this is the default value */
-.text, .text-m {
+.text,
+.text-m {
   font-size: 1rem;
 }
 
@@ -157,7 +164,7 @@ address {
 /* CSS for Navigation Bar */
 nav {
   position: sticky;
-  top: 0px;
+  top: 0;
   height: 4.5rem;
   padding: 1.25em;
   overflow: hidden;
@@ -210,7 +217,7 @@ nav .logo {
 @media only screen and (max-width: 768px) {
   nav {
     background: white;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s linear 0s;
     display: flex;
     flex-direction: column;
@@ -232,11 +239,12 @@ nav .logo {
     justify-items: center;
   }
 
-  nav .mobile-header img, nav .mobile-header svg {
+  nav .mobile-header img,
+  nav .mobile-header svg {
     height: 2rem;
   }
 
-  #navbar-x-icon{
+  #navbar-x-icon {
     display: none;
   }
 
@@ -245,11 +253,11 @@ nav .logo {
     height: 100vh;
   }
 
-  nav.open #navbar-x-icon{
+  nav.open #navbar-x-icon {
     display: block;
   }
 
-  nav.open #navbar-bar-icon{
+  nav.open #navbar-bar-icon {
     display: none;
   }
 
@@ -294,7 +302,7 @@ nav .logo {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner > div:first-child{
+  .banner > div:first-child {
     gap: 1.5rem;
   }
 
@@ -302,21 +310,23 @@ nav .logo {
     font-size: 2.375rem;
   }
 
-  .banner h1, .banner h3, .banner p {
-   width: 100%;
-   text-align: left;
+  .banner h1,
+  .banner h3,
+  .banner p {
+    width: 100%;
+    text-align: left;
   }
 }
 
 .banner h3 {
- font-weight: 400;
+  font-weight: 400;
 }
 
 .banner p {
   margin: auto;
 }
 
-#scroll-indicator{
+#scroll-indicator {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -325,11 +335,11 @@ nav .logo {
   gap: 0.5rem;
   transform: rotate(90deg);
   position: fixed;
-  bottom:30%;
+  bottom: 30%;
   left: 5%
 }
 
-#scroll-indicator.hidden{
+#scroll-indicator.hidden {
   display: none;
 }
 
@@ -344,7 +354,7 @@ nav .logo {
     margin: auto;
   }
 
-  .banner .logo{
+  .banner .logo {
     height: 3rem;
   }
 
@@ -354,67 +364,67 @@ nav .logo {
     font-family: Montserrat;
   }
 
-  #scroll-indicator{
+  #scroll-indicator {
     bottom: 10%
   }
 
-  @media only screen and (max-height: 700px){
-    #scroll-indicator{
+  @media only screen and (max-height: 700px) {
+    #scroll-indicator {
       transform: translateX(-1.5rem) rotate(90deg);
-      left: 0px;
+      left: 0;
     }
   }
 }
 
 /* CSS for Index Page  */
 
-  .cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2.75rem;
-    overflow-x: scroll;
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2.75rem;
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  min-width: 14rem;
+  padding: 2rem;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.10);
+}
+
+.card img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.card h4 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    padding: 1.5rem;
   }
+}
 
-  .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 30%;
-    min-width: 14rem;
-    padding: 2rem;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.10);
+@media only screen and (max-width: 768px) {
+
+  .card img {
+    display: none;
   }
-
-  .card img{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    margin-bottom: 2.5rem;
-  }
-
-  .card h4{
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .card{
-      padding: 1.5rem;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-
-    .card img{
-      display: none;
-    }
-  }
+}
 
 
-.column-2{
+.column-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: 1fr;
@@ -422,25 +432,25 @@ nav .logo {
   gap: 15%;
 }
 
-.column-2.reverse{
+.column-2.reverse {
   grid-template-areas: "illustration content";
 }
 
-.column-2 .content{
+.column-2 .content {
   grid-area: content;
   display: flex;
   flex-direction: column;
   gap: 3.25rem;
 }
 
-.column-2 .content h2{
+.column-2 .content h2 {
   margin-bottom: 1.5rem;
 }
-.column-2 .content h3{
+.column-2 .content h3 {
   margin-bottom: 1.5rem;
 }
 
-.column-2 .illustration{
+.column-2 .illustration {
   overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
@@ -449,14 +459,15 @@ nav .logo {
 }
 
 @media only screen and (max-width: 1024px) {
-  .column-2{
+  .column-2 {
     gap: 5%;
   }
 }
 
 @media only screen and (max-width: 768px) {
 
-  .column-2, .column-2.reverse{
+  .column-2,
+  .column-2.reverse {
     display: grid;
     grid-template-areas: "illustration" "content";
     grid-template-columns: 1fr;
@@ -464,26 +475,26 @@ nav .logo {
     gap: 2rem;
   }
 
-  .column-2 .content{
+  .column-2 .content {
     gap: 2.5rem;
   }
 
-  .column-2 .content h2{
+  .column-2 .content h2 {
     margin-bottom: 1rem;
   }
 
-  .column-2 .content h3{
+  .column-2 .content h3 {
     margin-bottom: 1.5rem;
   }
 
-  .column-2 .illustration{
-  background-position: center bottom;
+  .column-2 .illustration {
+    background-position: center bottom;
   }
 }
 
 /* CSS for Index Page - contact */
 
-#contact{
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -491,7 +502,8 @@ nav .logo {
   gap: 2.5rem;
 }
 
-#contact h2 , #contact p {
+#contact h2,
+#contact p {
   text-align: center;
 }
 
@@ -503,7 +515,8 @@ nav .logo {
   justify-content: center;
 }
 
-#contact img, #contact svg{
+#contact img,
+#contact svg {
   width: 5.25rem;
   height: 5.25rem;
   border-radius: 50%;
@@ -524,7 +537,8 @@ footer p {
   margin: 0;
 }
 
-footer *, footer a:hover {
+footer *,
+footer a:hover {
   color: white;
 }
 
@@ -551,19 +565,19 @@ footer *, footer a:hover {
   justify-content: space-between;
 }
 
-#footer #social-icons{
+#footer #social-icons {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
   color: white
 }
 
-#footer #social-icons svg{
+#footer #social-icons svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-#footer #social-icons svg path{
+#footer #social-icons svg path {
   fill: currentColor
 }
 
@@ -576,11 +590,12 @@ footer *, footer a:hover {
   display: none;
 }
 
-#company-details a, #credit a {
+#company-details a,
+#credit a {
   text-decoration: underline;
 }
 
-#company-legals{
+#company-legals {
   min-width: 10rem;
 }
 
@@ -619,7 +634,7 @@ footer *, footer a:hover {
     align-items: center;
   }
 
-  #footer .logo{
+  #footer .logo {
     display: none;
   }
 
@@ -633,7 +648,7 @@ footer *, footer a:hover {
   }
 
   #credit {
-    padding: 0rem 2em 2rem 2rem;
+    padding: 0 2em 2rem 2rem;
     text-align: left;
     font-size: 14px;
   }
