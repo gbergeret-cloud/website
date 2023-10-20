@@ -33,7 +33,6 @@ h6 {
   font-family: Montserrat;
   font-weight: 700;
   margin: 0px;
-  scroll-margin-top: 5rem;
 }
 
 h1,
@@ -57,6 +56,7 @@ h4 {
   h1,
   h2 {
     font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   h3 {
@@ -84,7 +84,6 @@ a, a:hover {
 
 p {
   font-size: 1rem;
-  color: #787878;
   margin: 0px
 }
 
@@ -114,6 +113,11 @@ address {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 2rem 2rem;
+  }
+}
 
 /* CSS for text */
 
@@ -121,8 +125,25 @@ address {
   content: "+ ";
 }
 
+.text-light-grey{
+  color: #787878;
+}
+
+.text-dark-grey{
+  color: #5A5A5A;
+}
+
 .text-xl {
-  font-size: 2rem;
+  font-size: 1.25rem;
+}
+
+.text-l {
+  font-size: 1.125rem;
+}
+
+/* Class unused this is the default value */
+.text, .text-m {
+  font-size: 1rem;
 }
 
 .text-s {
@@ -269,6 +290,7 @@ nav .logo {
 
 .banner .title {
   font-size: 4.375rem;
+  line-height: 4.375rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -344,7 +366,6 @@ nav .logo {
   }
 }
 
-
 /* CSS for Index Page - values */
 
   #values{
@@ -391,6 +412,75 @@ nav .logo {
       display: none;
     }
   }
+
+/* CSS for Index Page */
+
+.column-2{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  grid-template-areas: "content illustration";
+  gap: 15%;
+}
+
+.column-2.reverse{
+  grid-template-areas: "illustration content";
+}
+
+.column-2 .content{
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+
+.column-2 .content h2{
+  margin-bottom: 1.5rem;
+}
+.column-2 .content h3{
+  margin-bottom: 1.5rem;
+}
+
+.column-2 .illustration{
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  grid-area: illustration
+}
+
+@media only screen and (max-width: 1024px) {
+  .column-2{
+    gap: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .column-2, .column-2.reverse{
+    display: grid;
+    grid-template-areas: "illustration" "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15.75rem 1fr;
+    gap: 2rem;
+  }
+
+  .column-2 .content{
+    gap: 2.5rem;
+  }
+
+  .column-2 .content h2{
+    margin-bottom: 1rem;
+  }
+
+  .column-2 .content h3{
+    margin-bottom: 1.5rem;
+  }
+
+  .column-2 .illustration{
+  background-position: center bottom;
+  }
+}
 
 /* CSS for Index Page - contact */
 
