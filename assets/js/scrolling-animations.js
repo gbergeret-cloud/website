@@ -60,9 +60,9 @@ const setLogoInNavBar = () => {
 
 const calculateNewIconAndMenuPosition = () => {
   if (window.scrollY > 0) {
-    scrollIndicator.classList.add("hidden");
+    scrollIndicator?.classList.add("hidden");
   } else {
-    scrollIndicator.classList.remove("hidden");
+    scrollIndicator?.classList.remove("hidden");
   }
 
   if (window.matchMedia("only screen and (max-width: 768px)").matches) {
