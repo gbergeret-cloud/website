@@ -22,7 +22,7 @@ const nav = document.querySelector("nav");
 const smallLogoListItem = document.querySelector(
   "nav ul li:not(.menu-element)"
 );
-const logo = document.querySelector("#landing .logo");
+const logo = document.querySelector("#landing-section .logo");
 
 const menuElementsLeft = document.querySelectorAll("nav li.menu-element.left");
 const menuElementsRight = document.querySelectorAll(
@@ -104,7 +104,7 @@ const calculateNewIconAndMenuPosition = () => {
   if (bottomPosition <= navbarHeight) {
     setLogoInNavBar();
   } else {
-    //when logo is in the landing page or in transitions
+    //when logo is in the landing-section or in transitions
     nav.style.background = "transparent";
     nav.style.boxShadow = "";
     smallLogoListItem.style.display = "none";
