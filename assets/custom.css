@@ -32,7 +32,7 @@ h5,
 h6 {
   font-family: Montserrat;
   font-weight: 700;
-  margin: 20px 0 10px 0;
+  margin: 0px;
   scroll-margin-top: 5rem;
 }
 
@@ -85,6 +85,7 @@ a, a:hover {
 p {
   font-size: 1rem;
   color: #787878;
+  margin: 0px
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,7 +108,7 @@ address {
   margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .wrapper {
     padding: 4.75rem 2rem;
   }
@@ -244,7 +245,7 @@ nav .logo {
     width: 11rem;
   }
 }
-/* CSS for Index Page */
+/* CSS for Banner */
 
 .banner {
   min-height: calc(100vh - 4.5rem);
@@ -331,6 +332,53 @@ nav .logo {
     bottom: 10%
   }
 }
+
+/* CSS for Index Page - values */
+
+  #values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2.75rem;
+    overflow-x: scroll;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    min-width: 14rem;
+    padding: 2rem;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  .card img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+  }
+
+  .card h4{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .card{
+      padding: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .card img{
+      display: none;
+    }
+  }
 
 /* CSS for Website Footer */
 footer {
