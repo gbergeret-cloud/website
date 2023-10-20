@@ -335,7 +335,15 @@ nav .logo {
   #scroll-indicator{
     bottom: 10%
   }
+
+  @media only screen and (max-height: 700px){
+    #scroll-indicator{
+      transform: translateX(-1.5rem) rotate(90deg);
+      left: 0px;
+    }
+  }
 }
+
 
 /* CSS for Index Page - values */
 
