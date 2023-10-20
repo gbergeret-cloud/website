@@ -18,7 +18,7 @@ const showDevMode = () => {
 };
 
 if (isLocalEnv) {
-  showDevMode();
+  // showDevMode();
 }
 
 document.addEventListener("keydown", function (event) {
