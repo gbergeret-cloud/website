@@ -4,11 +4,15 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
 ---
 
 <div id="blog-page">
-  <!--  START - To kill when blog enabled @FIXME -->
+  <!-- START - To kill when blog enabled @FIXME -->
   <div id="landing-section" class="wrapper banner teaser">
     <div>
-      <img class="logo teaser" src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
-      <h1 class="title teaser">GBergeret <br /> Cloud Services</h1>
+      <img
+        class="logo teaser"
+        src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}"
+        height="90"
+        alt="colored company logo">
+      <h1 class="title teaser">GBergeret <br/> Cloud Services</h1>
       <h3 class="teaser">The blog is still a work in progress and should come soon...</h3>
     </div>
   </div>
@@ -17,7 +21,10 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
   <h1 class="plus preview">Blog</h1>
   <ul class="preview">
     {% for post in site.posts %}
-    <li><a href="{{post.url}}"> {{ post.title }}</a></li>
+      <li>
+        <a href="{{post.url}}">
+          {{ post.title }}</a>
+      </li>
     {% endfor %}
   </ul>
 </div>
