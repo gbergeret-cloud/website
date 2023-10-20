@@ -108,6 +108,11 @@ address {
   font-style: normal;
 }
 
+.full-screen, .banner {
+  min-height: calc(100vh - 4.5rem);
+}
+
+
 .wrapper {
   padding: 6.25rem 8rem;
   width: 100%;
@@ -303,7 +308,6 @@ nav .logo {
 /* CSS for Banner */
 
 .banner {
-  min-height: calc(100vh - 4.5rem);
   display: flex;
 }
 
