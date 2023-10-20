@@ -366,9 +366,9 @@ nav .logo {
   }
 }
 
-/* CSS for Index Page - values */
+/* CSS for Index Page  */
 
-  #values{
+  .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -413,7 +413,6 @@ nav .logo {
     }
   }
 
-/* CSS for Index Page */
 
 .column-2{
   display: grid;
