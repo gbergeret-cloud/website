@@ -22,7 +22,7 @@ const nav = document.querySelector("nav");
 const smallLogoListItem = document.querySelector(
   "nav ul li:not(.menu-element)"
 );
-const logo = document.querySelector("#index-page .logo");
+const logo = document.querySelector("#landing .logo");
 
 const menuElementsLeft = document.querySelectorAll("nav li.menu-element.left");
 const menuElementsRight = document.querySelectorAll(

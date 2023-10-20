@@ -3,8 +3,8 @@ title: Blog - GBergeret Cloud Services
 description: GBergeret cloud Services' blog, a place to find the lastest news, ideas and case studies from the worlds of cloud and DevSecOps.
 ---
 
-<!--  START - To kill when blog enabled @FIXME -->
-<div id="index-page">
+<div id="blog-page">
+  <!--  START - To kill when blog enabled @FIXME -->
   <div id="landing" class="wrapper banner teaser">
     <div>
       <img class="logo teaser" src="{{ "assets/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo">
@@ -12,12 +12,12 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
       <h3 class="teaser">The blog is still a work in progress and should come soon...</h3>
     </div>
   </div>
-</div>
-<!-- END -  To kill when blog enabled @FIXME -->
+  <!-- END -  To kill when blog enabled @FIXME -->
 
-<h1 class="plus preview">Blog</h1>
-<ul class="preview">
-  {% for post in site.posts %}
-  <li><a href="{{post.url}}"> {{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+  <h1 class="plus preview">Blog</h1>
+  <ul class="preview">
+    {% for post in site.posts %}
+    <li><a href="{{post.url}}"> {{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
