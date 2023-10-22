@@ -108,6 +108,11 @@ address {
   font-style: normal;
 }
 
+.page {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .full-screen,
 .banner {
   min-height: calc(100vh - 4.5rem);
@@ -725,7 +730,6 @@ footer a:hover {
     gap: 2rem;
     padding: 2rem;
     margin: auto;
-    max-width: 1600px;
     line-height: 1.4;
   }
 
