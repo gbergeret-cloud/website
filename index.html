@@ -162,6 +162,7 @@ permalink: /
       </div>
       <div class="swiper">
         <div id="brands" class="swiper-wrapper">
+          {% for i in (1..5) %}
           <div class="brand swiper-slide">
             <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
           </div>
@@ -175,29 +176,9 @@ permalink: /
             <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
           </div>
           <div class="brand swiper-slide">
-            <img
-              class="appearhere"
-              src="{{ "assets/img/appearhere-logo-white.png" | relative_url }}"
-              alt="brand Appearhere logo">
+            <img src="{{ "assets/img/appearhere-logo-black.png" | relative_url }}" alt="brand Appearhere logo">
           </div>
-          <div class="brand swiper-slide">
-            <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
-          </div>
-          <div class="brand swiper-slide">
-            <img src="{{ "assets/img/onfido-logo-black.png" | relative_url }}" alt="brand Onfido logo">
-          </div>
-          <div class="brand swiper-slide">
-            <img src="{{ "assets/img/harvie-logo-black.png" | relative_url }}" alt="brand Harvie logo">
-          </div>
-          <div class="brand swiper-slide">
-            <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
-          </div>
-          <div class="brand swiper-slide">
-            <img
-              class="appearhere"
-              src="{{ "assets/img/appearhere-logo-white.png" | relative_url }}"
-              alt="brand Appearhere logo">
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
