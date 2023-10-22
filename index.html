@@ -116,42 +116,8 @@ permalink: /
       </div>
       <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
     </div>
-    <div class="wrapper column-2 reverse">
-      <div class="content">
-        <div>
-          <h2 class="plus">
-            <i>Building solid foundations</i>
-          </h2>
-          <p class="text-l">
-            It all comes down to strong foundations – and my services revolve around helping you put those building blocks in place.
-            <br/>
-            <br/>
-            I get to know your business, offer out-of-hours support and take care of the underlying structure of your platform.
-          </p>
-        </div>
-      </div>
-      <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
-    </div>
-    <div class="wrapper column-2 reverse">
-      <div class="content">
-        <div>
-          <h3>Should you work with me?</h3>
-          <p class="text-light-grey">
-            My customers choose to work with me because I’m transparent and I offer dependable support. My clients include both tech and non-tech businesses, but mostly startups and SMEs.
-            <br/><br/>
-            If you’re a tech business, I can support you by integrating myself into your existing engineering team. If you don’t have an engineering team, I’ll manage your cloud infrastructure by acting as one, for as long as you need.
-          </p>
-        </div>
-        <div>
-          <h3>What I do</h3>
-          <p class="text-light-grey">
-            Every company is different, so I tailor my services to each client. Depending on what you need help with, we can work together on a weekly or monthly basis – but I also provide one-off consulting sessions.
-            <br/><br/>
-            I’ll offer you the same skills and expertise whatever model you choose, along with out of hours work and 24/7 emergency support.
-          </p>
-        </div>
-      </div>
-      <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
+    <div id="certifications" class="wrapper preview">
+      <h2>certifications</h2>
     </div>
     <div class="wrapper column-2">
       <div class="content">
@@ -174,96 +140,163 @@ permalink: /
       </div>
       <div class="image-cover" style="background-image: url('https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI')"></div>
     </div>
-  </div>
-
-  <div id="certifications" class="wrapper preview">
-    <h2>certifications</h2>
-  </div>
-
-  <div id="trusted-by" class="wrapper preview">
-    <h2>trusted by</h2>
-  </div>
-
-  <div class="preview">
-    <div class="wrapper cards">
-      <div class="card">
-        <h4>Platform engineering</h4>
-        <p class="text-s text-light-grey">
-          I’ll help you along your cloud journey, whether you have your own team in-house or need to fully outsource.
-          <br/><br/>
-          Tap into my services for a few hours a week or something more substantial, like 12 to 18 hours each week.
-        </p>
-      </div>
-      <div class="card">
-
-        <h4>Cloud support</h4>
-        <p class="text-s text-light-grey">
-          If you aren’t looking to internalise, I’ll take care of  your cloud infrastructure for you.
-          <br/><br/>
-          Cloud support customers usually choose to work with me for a few days each month.
-        </p>
-      </div>
-      <div class="card">
-
-        <h4>DevOps consulting</h4>
-        <p class="text-s text-light-grey">
-          I’ll help your team work more effectively and advise the people who own your infrastructure.
-          <br/><br/>
-          We’ll have regular catch-ups, usually bi-weekly, and I’ll also be available for emergencies.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="skills" class="wrapper preview">
-    <h2 class="plus">My
-      <i>specialities</i>
-    </h2>
-  </div>
-
-  <div id="blog-preview" class="wrapper preview">
-    <h2 class="plus">
-      <i>Blog</i>
-    </h2>
-    <p>News, ideas and case studies from the worlds of cloud and DevSecOps.</p>
-
-    <div class="posts-preview">
-      {% for post in site.posts %}
-        <div class="post-preview">
-          <img
-            src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI"
-            alt="white company logo"
-            width="30"
-            height="36" />
-          <a href="{{post.url}}">
-            {{ post.title }}</a>
+    <div class="wrapper column-2 reverse">
+      <div class="content">
+        <div>
+          <h2 class="plus">
+            <i>Building solid foundations</i>
+          </h2>
+          <p class="text-l">
+            It all comes down to strong foundations – and my services revolve around helping you put those building blocks in place.
+            <br/>
+            <br/>
+            I get to know your business, offer out-of-hours support and take care of the underlying structure of your platform.
+          </p>
         </div>
-      {% endfor %}
+      </div>
+      <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
     </div>
-
-    <p class="see-more">See more</p>
-  </div>
-
-  <div id="contact" class="full-screen wrapper">
-    <h2>Want to have a
-      <i>chat?</i>
-    </h2>
-    <p>
-      Get in touch with me by email at {{ site.company.email }} <br/>
-      or via the details below.
-      <br/>
-      <br/>
-      Let's catch up over a coffee or a call, <br/>
-      to get to know each other and see how we could work together.
-    </p>
-
-    <ul>
-      <li><a href="mailto:{{ site.company.email }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
-<i class="fa-solid fa-envelope"></i></a></li>
-      <li><a href="tel:{{ site.author.phone }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
-<i class="fa-solid fa-mobile-screen-button"></i></a></li>
-      <li><a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
-<i class="fa-solid fa-address-card"></i></a></li>
-    </ul>
+    <div id="trusted-by" class="wrapper preview">
+      <div class="title">
+        <span>Trusted by</span>
+      </div>
+        <div class="swiper">
+          <div id="brands" class="swiper-wrapper">
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/onfido-logo-black.png" | relative_url }}" alt="brand Onfido logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/harvie-logo-black.png" | relative_url }}" alt="brand Harvie logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img class="appearhere" src="{{ "assets/img/appearhere-logo-white.png" | relative_url }}" alt="brand Appearhere logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/onfido-logo-black.png" | relative_url }}" alt="brand Onfido logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/harvie-logo-black.png" | relative_url }}" alt="brand Harvie logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
+            </div>
+            <div class="brand swiper-slide">
+              <img class="appearhere" src="{{ "assets/img/appearhere-logo-white.png" | relative_url }}" alt="brand Appearhere logo">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="wrapper column-2 reverse">
+      <div class="content">
+        <div>
+          <h3>Should you work with me?</h3>
+          <p class="text-light-grey">
+            My customers choose to work with me because I’m transparent and I offer dependable support. My clients include both tech and non-tech businesses, but mostly startups and SMEs.
+            <br/><br/>
+            If you’re a tech business, I can support you by integrating myself into your existing engineering team. If you don’t have an engineering team, I’ll manage your cloud infrastructure by acting as one, for as long as you need.
+          </p>
+        </div>
+        <div>
+          <h3>What I do</h3>
+          <p class="text-light-grey">
+            Every company is different, so I tailor my services to each client. Depending on what you need help with, we can work together on a weekly or monthly basis – but I also provide one-off consulting sessions.
+            <br/><br/>
+            I’ll offer you the same skills and expertise whatever model you choose, along with out of hours work and 24/7 emergency support.
+          </p>
+        </div>
+      </div>
+      <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
+    </div>
   </div>
 </div>
+<div class="preview">
+  <div class="wrapper cards">
+    <div class="card">
+      <h4>Platform engineering</h4>
+      <p class="text-s text-light-grey">
+        I’ll help you along your cloud journey, whether you have your own team in-house or need to fully outsource.
+        <br/><br/>
+        Tap into my services for a few hours a week or something more substantial, like 12 to 18 hours each week.
+      </p>
+    </div>
+    <div class="card">
+
+      <h4>Cloud support</h4>
+      <p class="text-s text-light-grey">
+        If you aren’t looking to internalise, I’ll take care of  your cloud infrastructure for you.
+        <br/><br/>
+        Cloud support customers usually choose to work with me for a few days each month.
+      </p>
+    </div>
+    <div class="card">
+
+      <h4>DevOps consulting</h4>
+      <p class="text-s text-light-grey">
+        I’ll help your team work more effectively and advise the people who own your infrastructure.
+        <br/><br/>
+        We’ll have regular catch-ups, usually bi-weekly, and I’ll also be available for emergencies.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="skills" class="wrapper preview">
+  <h2 class="plus">My
+    <i>specialities</i>
+  </h2>
+</div>
+
+<div id="blog-preview" class="wrapper preview">
+  <h2 class="plus">
+    <i>Blog</i>
+  </h2>
+  <p>News, ideas and case studies from the worlds of cloud and DevSecOps.</p>
+
+  <div class="posts-preview">
+    {% for post in site.posts %}
+      <div class="post-preview">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI"
+          alt="white company logo"
+          width="30"
+          height="36" />
+        <a href="{{post.url}}">
+          {{ post.title }}</a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <p class="see-more">See more</p>
+</div>
+
+<div id="contact" class="full-screen wrapper">
+  <h2>Want to have a
+    <i>chat?</i>
+  </h2>
+  <p>
+    Get in touch with me by email at {{ site.company.email }} <br/>
+    or via the details below.
+    <br/>
+    <br/>
+    Let's catch up over a coffee or a call, <br/>
+    to get to know each other and see how we could work together.
+  </p>
+
+  <ul>
+    <li><a href="mailto:{{ site.company.email }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+<i class="fa-solid fa-envelope"></i></a></li>
+    <li><a href="tel:{{ site.author.phone }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+<i class="fa-solid fa-mobile-screen-button"></i></a></li>
+    <li><a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+<i class="fa-solid fa-address-card"></i></a></li>
+  </ul>
+</div></div>

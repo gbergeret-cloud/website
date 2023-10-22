@@ -533,6 +533,68 @@ nav .logo {
 
 }
 
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+/* CSS for Index Page - trusted-by */
+
+#trusted-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7rem;
+}
+
+#trusted-by .title span {
+  display: flex;
+  padding: 0.375rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  color: #CACACF;
+  border: 1px solid #CACACF;
+}
+
+#trusted-by .swiper {
+  overflow: visible;
+}
+
+#trusted-by #brands {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem
+}
+#trusted-by #brands .brand {
+  height: 4rem;
+}
+
+#trusted-by .brand img {
+  height: 100%;
+  -webkit-filter: grayscale();
+  filter: grayscale();
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#trusted-by .brand img.appearhere {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+
 /* CSS for Index Page - contact */
 
 #contact {
