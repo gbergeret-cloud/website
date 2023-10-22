@@ -594,12 +594,6 @@ nav .logo {
   object-fit: contain;
 }
 
-#trusted-by .brand img.appearhere {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-
 /* CSS for Index Page - contact */
 
 #contact {
