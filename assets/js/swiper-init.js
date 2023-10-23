@@ -1,51 +1,86 @@
 const swiperInit = () => {
-  new Swiper("#trusted-by .swiper", {
+  const certsSwiper = new Swiper("#certifications.swiper", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 20,
     grabCursor: true,
-    slidesPerView: 1, // default value
+    slidesPerView: 2, // default value
     autoplay: {
       delay: 1,
       disableOnInteraction: true,
     },
-    loop: true,
-    freeMode: true,
     speed: 5000,
     freeModeMomentum: false,
     breakpoints: {
-      // when window width is >= 320px
-      425: {
-        slidesPerView: 2,
-      },
+      // when window width is >= 760px
       768: {
+        spaceBetween: 50,
         slidesPerView: 4,
-      },
-      1024: {
-        slidesPerView: 5, // this value should be maximum half of the number of element in the list
       },
     },
   });
 
-  new Swiper("#certifications.swiper", {
+  let certsWrapper = document.querySelector(
+    "#certifications.swiper .swiper-wrapper"
+  );
+  let certsTransformValue;
+
+  certsWrapper.addEventListener("mouseenter", (event) => {
+    certsSwiper.autoplay.stop();
+    certsTransformValue = certsWrapper.style.transform;
+    certsWrapper.style.transitionDuration = "0ms";
+    certsWrapper.style.transform =
+      "translate3d(" + certsSwiper.getTranslate() + "px, 0px, 0px)";
+  });
+
+  certsWrapper.addEventListener("mouseleave", (event) => {
+    certsWrapper.style.transitionDuration = certsSwiper.params.speed + "ms";
+    certsWrapper.style.transform = certsTransformValue;
+    certsSwiper.autoplay.start();
+  });
+
+  const trustedBySwiper = new Swiper("#trusted-by .swiper", {
     grabCursor: true,
-    slidesPerView: 1, // default value
+    slidesPerView: 2, // default value
     autoplay: {
       delay: 1,
       disableOnInteraction: true,
     },
+    spaceBetween: 20,
     loop: true,
     freeMode: true,
     speed: 5000,
     freeModeMomentum: false,
     breakpoints: {
-      // when window width is >= 320px
-      425: {
-        slidesPerView: 2,
-      },
+      // when window width is >= 768px
       768: {
         slidesPerView: 4,
+        spaceBetween: 50,
       },
       1024: {
-        slidesPerView: 4, // this value should be maximum half of the number of element in the list
+        spaceBetween: 50,
+        slidesPerView: 4,
       },
     },
+  });
+
+  let trustedByWrapper = document.querySelector(
+    "#trusted-by .swiper .swiper-wrapper"
+  );
+  let trustedByTransformValue;
+
+  trustedByWrapper.addEventListener("mouseenter", (event) => {
+    trustedBySwiper.autoplay.stop();
+    trustedByTransformValue = trustedByWrapper.style.transform;
+    trustedByWrapper.style.transitionDuration = "0ms";
+    trustedByWrapper.style.transform =
+      "translate3d(" + trustedBySwiper.getTranslate() + "px, 0px, 0px)";
+  });
+
+  trustedByWrapper.addEventListener("mouseleave", (event) => {
+    trustedByWrapper.style.transitionDuration =
+      trustedBySwiper.params.speed + "ms";
+    trustedByWrapper.style.transform = trustedByTransformValue;
+    trustedBySwiper.autoplay.start();
   });
 };
