@@ -110,6 +110,7 @@ button {
   border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   font-weight: 700;
+  min-width: 6.25rem;
 }
 
 .page {
@@ -713,13 +714,14 @@ nav .logo {
 
 #blog-preview .posts-preview {
   margin: 4.25rem 0;
-  /* display: flex;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 15rem));
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow: scroll;
   gap: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 #blog-preview .post-preview {
@@ -727,6 +729,7 @@ nav .logo {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  min-width: 17.75rem;
   width: 17.75rem;
 }
 
@@ -741,8 +744,16 @@ nav .logo {
     margin-bottom: 3.5rem;
   }
 
+  #blog-preview > div {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   #blog-preview .posts-preview {
-    margin: 2.75rem 0 0
+    margin: 2.75rem 0 0;
+    overflow: visible;
   }
 }
 
