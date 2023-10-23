@@ -548,6 +548,55 @@ nav .logo {
   transition-timing-function: linear !important;
 }
 
+/* CSS for Index Page - certifications */
+
+#certifications.swiper {
+  overflow: visible;
+}
+
+#certifications .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem
+}
+
+#certifications .certification {
+  height: 9.5rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.375rem
+}
+
+#certifications .certification img {
+  -webkit-filter: grayscale();
+  filter: grayscale();
+  display: block;
+  object-fit: contain;
+  height: 3.75rem;
+}
+
+#certifications .certification span {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #certifications .certification {
+    height: 6.75rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem
+  }
+}
+
 /* CSS for Index Page - trusted-by */
 
 #trusted-by {
@@ -579,6 +628,7 @@ nav .logo {
   align-items: center;
   gap: 4rem
 }
+
 #trusted-by #brands .brand {
   height: 4rem;
 }
