@@ -799,6 +799,51 @@ nav .logo {
   }
 }
 
+/* CSS for Blog Page */
+
+#blog-page h1{
+  margin-bottom: 1rem;
+}
+
+#blog-page #articles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  margin: 1rem 0px;
+}
+
+#blog-page .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 17.75rem;
+  width: 17.75rem;
+}
+
+#blog-page .article img{
+  width: 100%;
+  object-fit: contain;
+}
+
+#blog-page .article a{
+  text-decoration: underline;
+}
+
+#blog-page .article button{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #blog-page .article button{
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 /* CSS for Website Footer */
 footer {
   background-color: black;
