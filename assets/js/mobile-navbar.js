@@ -1,7 +1,6 @@
-window.onload = () => {
+const mobileNavBarInit = () => {
   const findBarIcon = document.querySelector("#navbar-bar-icon");
   const findXIcon = document.querySelector("#navbar-x-icon");
-  const nav = document.querySelector("nav");
   const navBarLinks = document.querySelectorAll("nav .menu-element a");
 
   const toggleOpen = () => {
