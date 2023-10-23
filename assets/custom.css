@@ -681,7 +681,6 @@ nav .logo {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3rem;
-  overflow-y: scroll;
 }
 
 #skills h4 {
@@ -694,16 +693,19 @@ nav .logo {
 
 
 @media only screen and (max-width: 768px) {
+
+  #skills > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   #skills h2 {
     margin-bottom: 2.875rem;
   }
 
   #skills h4 {
     margin-bottom: 1rem;
-  }
-
-  #skills > div {
-    gap: 2rem;
   }
 }
 
