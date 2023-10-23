@@ -123,6 +123,7 @@ address {
   padding: 6.25rem 8rem;
   width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
