@@ -119,24 +119,22 @@ permalink: /
     <div class="wrapper preview">
       <div id="certifications" class="wrapper swiper preview">
         <div class="swiper-wrapper">
-          {% for i in (1..5) %}
-            <div class="certification swiper-slide">
-              <img src="{{ "assets/img/certifications/aws-certification.svg" | relative_url }}" alt="certification aws logo">
-              <span class="text-light-grey text-s">AWS Solutions Architect - Associate</span>
-            </div>
-            <div class="certification swiper-slide">
-              <img src="{{ "assets/img/certifications/aws-certification.svg" | relative_url }}" alt="certification aws logo">
-              <span class="text-light-grey text-s">AWS Solutions Architect - Professional</span>
-            </div>
-            <div class="certification swiper-slide">
-              <img src="{{ "assets/img/certifications/hashicorp-certification.svg" | relative_url }}" alt="certification Hashi Corp logo">
-              <span class="text-light-grey text-s">HashiCorp Certified: Terraform Associate (003)</span>
-            </div>
-            <div class="certification swiper-slide">
-              <img src="{{ "assets/img/certifications/google-certification.svg" | relative_url }}" alt="certification Google logo">
-              <span class="text-light-grey text-s">Google Cloud Certified - Associate Cloud Engineer</span>
-            </div>
-          {% endfor %}
+          <div class="certification swiper-slide">
+            <img src="{{ "assets/img/certifications/aws-certification.svg" | relative_url }}" alt="certification aws logo">
+            <span class="text-light-grey text-s">AWS Solutions Architect - Associate</span>
+          </div>
+          <div class="certification swiper-slide">
+            <img src="{{ "assets/img/certifications/aws-certification.svg" | relative_url }}" alt="certification aws logo">
+            <span class="text-light-grey text-s">AWS Solutions Architect - Professional</span>
+          </div>
+          <div class="certification swiper-slide">
+            <img src="{{ "assets/img/certifications/hashicorp-certification.svg" | relative_url }}" alt="certification Hashi Corp logo">
+            <span class="text-light-grey text-s">HashiCorp Certified: Terraform Associate (003)</span>
+          </div>
+          <div class="certification swiper-slide">
+            <img src="{{ "assets/img/certifications/google-certification.svg" | relative_url }}" alt="certification Google logo">
+            <span class="text-light-grey text-s">Google Cloud Certified - Associate Cloud Engineer</span>
+          </div>
         </div>
       </div>
     </div>
@@ -183,23 +181,21 @@ permalink: /
       </div>
       <div class="swiper">
         <div id="brands" class="swiper-wrapper">
-          {% for i in (1..5) %}
-            <div class="brand swiper-slide">
-              <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
-            </div>
-            <div class="brand swiper-slide">
-              <img src="{{ "assets/img/onfido-logo-black.png" | relative_url }}" alt="brand Onfido logo">
-            </div>
-            <div class="brand swiper-slide">
-              <img src="{{ "assets/img/harvie-logo-black.png" | relative_url }}" alt="brand Harvie logo">
-            </div>
-            <div class="brand swiper-slide">
-              <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
-            </div>
-            <div class="brand swiper-slide">
-              <img src="{{ "assets/img/appearhere-logo-black.png" | relative_url }}" alt="brand Appearhere logo">
-            </div>
-          {% endfor %}
+          <div class="brand swiper-slide">
+            <img src="{{ "assets/img/cintra-logo-fullcolor.svg" | relative_url }}" alt="brand Cintra logo">
+          </div>
+          <div class="brand swiper-slide">
+            <img src="{{ "assets/img/onfido-logo-black.png" | relative_url }}" alt="brand Onfido logo">
+          </div>
+          <div class="brand swiper-slide">
+            <img src="{{ "assets/img/harvie-logo-black.png" | relative_url }}" alt="brand Harvie logo">
+          </div>
+          <div class="brand swiper-slide">
+            <img src="{{ "assets/img/ubiq-logo-black.svg" | relative_url }}" alt="brand Ubiq logo">
+          </div>
+          <div class="brand swiper-slide">
+            <img src="{{ "assets/img/appearhere-logo-black.png" | relative_url }}" alt="brand Appearhere logo">
+          </div>
         </div>
       </div>
     </div>
@@ -225,130 +221,143 @@ permalink: /
       <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
     </div>
   </div>
-</div>
-<div class="preview">
-  <div class="wrapper cards">
-    <div class="card">
-      <h4>Platform engineering</h4>
-      <p class="text-s text-light-grey">
-        I’ll help you along your cloud journey, whether you have your own team in-house or need to fully outsource.
-        <br/><br/>
-        Tap into my services for a few hours a week or something more substantial, like 12 to 18 hours each week.
-      </p>
-    </div>
-    <div class="card">
 
-      <h4>Cloud support</h4>
-      <p class="text-s text-light-grey">
-        If you aren’t looking to internalise, I’ll take care of  your cloud infrastructure for you.
-        <br/><br/>
-        Cloud support customers usually choose to work with me for a few days each month.
-      </p>
-    </div>
-    <div class="card">
-
-      <h4>DevOps consulting</h4>
-      <p class="text-s text-light-grey">
-        I’ll help your team work more effectively and advise the people who own your infrastructure.
-        <br/><br/>
-        We’ll have regular catch-ups, usually bi-weekly, and I’ll also be available for emergencies.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="skills" class="wrapper preview">
-  <h2 class="plus">My
-    <i>specialities</i>
-  </h2>
-
-  <div>
-    <div class="skill">
-      <h4>Cloud infrastructure</h4>
-      <ul class="text-light-grey">
-        <li>Public Cloud (AWS or GCP)</li>
-        <li>Message-driven infrastructure</li>
-        <li>Microservices Architecture</li>
-        <li>Architecture Cost-efficiency</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h4>Platform engineering</h4>
-      <ul class="text-light-grey">
-        <li>Kubernetes / Docker
-        </li>
-        <li>Infrastructure as code</li>
-        <li>Self-service</li>
-        <li>Security and Resilience</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h4>Development lifecycle</h4>
-      <ul class="text-light-grey">
-        <li>Improving time to market</li>
-        <li>CI/CD pipeline</li>
-        <li>Change management process</li>
-        <li>
-          Code reliability</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h4>Observability and monitoring</h4>
-      <ul class="text-light-grey">
-        <li>Improving visibility
-        </li>
-        <li>Raising awareness</li>
-        <li>
-          Running lean infrastructure</li>
-        <li>
-          Logging pipelines and alarm management</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div id="blog-preview" class="wrapper preview">
-  <h2 class="plus">
-    <i>Blog</i>
-  </h2>
-  <p>News, ideas and case studies from the worlds of cloud and DevSecOps.</p>
-
-  <div class="posts-preview">
-    {% for post in site.posts %}
-      <div class="post-preview">
-        <img
-          src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI"
-          alt="white company logo"
-          width="30"
-          height="36" />
-        <a href="{{post.url}}">
-          {{ post.title }}</a>
+  <div class="preview">
+    <div class="wrapper cards">
+      <div class="card">
+        <h4>Platform engineering</h4>
+        <p class="text-s text-light-grey">
+          I’ll help you along your cloud journey, whether you have your own team in-house or need to fully outsource.
+          <br/><br/>
+          Tap into my services for a few hours a week or something more substantial, like 12 to 18 hours each week.
+        </p>
       </div>
-    {% endfor %}
+      <div class="card">
+
+        <h4>Cloud support</h4>
+        <p class="text-s text-light-grey">
+          If you aren’t looking to internalise, I’ll take care of  your cloud infrastructure for you.
+          <br/><br/>
+          Cloud support customers usually choose to work with me for a few days each month.
+        </p>
+      </div>
+      <div class="card">
+
+        <h4>DevOps consulting</h4>
+        <p class="text-s text-light-grey">
+          I’ll help your team work more effectively and advise the people who own your infrastructure.
+          <br/><br/>
+          We’ll have regular catch-ups, usually bi-weekly, and I’ll also be available for emergencies.
+        </p>
+      </div>
+    </div>
   </div>
 
-  <p class="see-more">See more</p>
-</div>
+  <div id="skills" class="wrapper preview">
+    <h2 class="plus">My
+      <i>specialities</i>
+    </h2>
 
-<div id="contact" class="full-screen wrapper">
-  <h2>Want to have a
-    <i>chat?</i>
-  </h2>
-  <p>
-    Get in touch with me by email at {{ site.company.email }} <br/>
-    or via the details below.
-    <br/>
-    <br/>
-    Let's catch up over a coffee or a call, <br/>
-    to get to know each other and see how we could work together.
-  </p>
+    <div>
+      <div class="skill">
+        <h4>Cloud infrastructure</h4>
+        <ul class="text-light-grey">
+          <li>Public Cloud (AWS or GCP)</li>
+          <li>Message-driven infrastructure</li>
+          <li>Microservices Architecture</li>
+          <li>Architecture Cost-efficiency</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Platform engineering</h4>
+        <ul class="text-light-grey">
+          <li>Kubernetes / Docker
+          </li>
+          <li>Infrastructure as code</li>
+          <li>Self-service</li>
+          <li>Security and Resilience</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Development lifecycle</h4>
+        <ul class="text-light-grey">
+          <li>Improving time to market</li>
+          <li>CI/CD pipeline</li>
+          <li>Change management process</li>
+          <li>
+            Code reliability</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Observability and monitoring</h4>
+        <ul class="text-light-grey">
+          <li>Improving visibility
+          </li>
+          <li>Raising awareness</li>
+          <li>
+            Running lean infrastructure</li>
+          <li>
+            Logging pipelines and alarm management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <ul>
-    <li><a href="mailto:{{ site.company.email }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+  <div id="blog-preview" class="wrapper preview">
+    <h2 class="plus">
+      <i>Blog</i>
+    </h2>
+    <p class="text-light-grey">News, ideas and case studies from the worlds of cloud and DevSecOps.</p>
+
+    <div>
+      <div class="posts-preview">
+        {% for post in site.posts %}
+          <div class="post-preview">
+            <img src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI" alt="white company logo" />
+            <a href="{{post.url}}" class="text-light-grey">
+              {{ post.title }}</a>
+          </div>
+        {% endfor %}
+        {% for post in site.posts %}
+          <div class="post-preview">
+            <img src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI" alt="white company logo" />
+            <a href="{{post.url}}" class="text-light-grey">
+              {{ post.title }}</a>
+          </div>
+        {% endfor %}
+        {% for post in site.posts %}
+          <div class="post-preview">
+            <img src="https://drive.google.com/uc?export=view&id=1a0ZRXs6UHAwmDlQk2HJV7SpRlt7MbIOI" alt="white company logo" />
+            <a href="{{post.url}}" class="text-light-grey">
+              {{ post.title }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <button class="see-more">See more</button>
+  </div>
+
+  <div id="contact" class="full-screen wrapper">
+    <h2>Want to have a
+      <i>chat?</i>
+    </h2>
+    <p>
+      Get in touch with me by email at {{ site.company.email }} <br/>
+      or via the details below.
+      <br/>
+      <br/>
+      Let's catch up over a coffee or a call, <br/>
+      to get to know each other and see how we could work together.
+    </p>
+
+    <ul>
+      <li><a href="mailto:{{ site.company.email }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
 <i class="fa-solid fa-envelope"></i></a></li>
-    <li><a href="tel:{{ site.author.phone }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+      <li><a href="tel:{{ site.author.phone }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
 <i class="fa-solid fa-mobile-screen-button"></i></a></li>
-    <li><a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
+      <li><a href="{{ "assets/Geoffrey_Bergeret_vCard.vcf" | relative_url }}"><!-- <img src="{{ "assets/img/gbergeret-brandmark-fullcolor.svg" | relative_url }}" height="90" alt="colored company logo"> -->
 <i class="fa-solid fa-address-card"></i></a></li>
-  </ul>
+    </ul>
+  </div>
 </div></div>

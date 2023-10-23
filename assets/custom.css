@@ -104,6 +104,14 @@ address {
   font-style: normal;
 }
 
+button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
 .page {
   max-width: 1600px;
   margin: 0 auto;
@@ -189,6 +197,22 @@ address {
 .text-xs {
   font-size: 0.75rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .text,
+  .text-m {
+    font-size: 0.875rem;
+  }
+
+  .text-s {
+    font-size: 0.75rem;
+  }
+
+  .text-xs {
+    font-size: 0.625rem;
+  }
+}
+
 
 /* CSS for Navigation Bar */
 nav {
@@ -373,6 +397,12 @@ nav .logo {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .banner .title {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .banner > div {
     display: flex;
@@ -390,8 +420,6 @@ nav .logo {
 
   .banner .title {
     text-align: left;
-    font-weight: bold;
-    font-family: Montserrat;
   }
 
   #scroll-indicator {
@@ -550,15 +578,6 @@ nav .logo {
   overflow: visible;
 }
 
-#certifications .swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 3.5rem
-}
-
 #certifications .certification {
   height: 9.5rem;
   width: 18rem;
@@ -591,6 +610,10 @@ nav .logo {
     align-items: center;
     gap: 1.5rem
   }
+
+  #certifications .certification img {
+    height: 3.5rem;
+  }
 }
 
 /* CSS for Index Page - trusted-by */
@@ -617,16 +640,10 @@ nav .logo {
   overflow: visible;
 }
 
-#trusted-by #brands {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 4rem
-}
 
 #trusted-by #brands .brand {
   height: 4rem;
+  display: inline-block;
 }
 
 #trusted-by .brand img {
@@ -644,10 +661,6 @@ nav .logo {
     gap: 3.75rem;
   }
 
-  #trusted-by #brands {
-    gap: 3.75rem
-  }
-
   #trusted-by #brands .brand {
     height: 2.875rem;
   }
@@ -655,40 +668,81 @@ nav .logo {
 
 /* CSS for Index Page - skills - specialities */
 
-#skills{
+#skills {
   background-color: #F8F8F8;
 }
 
-#skills h2{
+#skills h2 {
   margin-bottom: 5.25rem;
 }
 
-#skills > div{
+#skills > div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3rem;
+  overflow-y: scroll;
 }
 
-#skills h4{
+#skills h4 {
   margin-bottom: 2rem;
 }
 
-#skills ul{
+#skills ul {
   padding-left: 1rem;
 }
 
 
 @media only screen and (max-width: 768px) {
-  #skills h2{
+  #skills h2 {
     margin-bottom: 2.875rem;
   }
 
-  #skills h4{
+  #skills h4 {
     margin-bottom: 1rem;
   }
 
-  #skills > div{
+  #skills > div {
     gap: 2rem;
+  }
+}
+
+/* CSS for Index Page - blog-preview */
+#blog-preview h2 {
+  margin-bottom: 0.5rem;
+}
+
+#blog-preview .posts-preview {
+  margin: 4.25rem 0;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 15rem));
+  gap: 1rem;
+}
+
+#blog-preview .post-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 17.75rem;
+}
+
+#blog-preview .post-preview img{
+  width: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #blog-preview h2 {
+    margin-bottom: 3.5rem;
+  }
+
+  #blog-preview .posts-preview {
+    margin: 2.75rem 0 0
   }
 }
 
