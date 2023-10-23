@@ -1,4 +1,4 @@
-window.onload = () => {
+const swiperInit = () => {
   const swiper = new Swiper(".swiper", {
     grabCursor: true,
     slidesPerView: 1, //default value
