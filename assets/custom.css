@@ -49,7 +49,7 @@ h4 {
   font-size: 1.375rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   h1,
   h2,
   h3,
@@ -98,10 +98,6 @@ p {
   p {
     font-size: 0.875rem;
   }
-}
-
-li {
-  list-style-type: none;
 }
 
 address {
@@ -657,6 +653,45 @@ nav .logo {
   }
 }
 
+/* CSS for Index Page - skills - specialities */
+
+#skills{
+  background-color: #F8F8F8;
+}
+
+#skills h2{
+  margin-bottom: 5.25rem;
+}
+
+#skills > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+#skills h4{
+  margin-bottom: 2rem;
+}
+
+#skills ul{
+  padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #skills h2{
+    margin-bottom: 2.875rem;
+  }
+
+  #skills h4{
+    margin-bottom: 1rem;
+  }
+
+  #skills > div{
+    gap: 2rem;
+  }
+}
+
 /* CSS for Index Page - contact */
 
 #contact {
@@ -680,6 +715,10 @@ nav .logo {
   justify-content: center;
 }
 
+#contact li {
+  list-style-type: none;
+}
+
 #contact img,
 #contact svg {
   width: 5.25rem;
@@ -696,6 +735,10 @@ nav .logo {
 /* CSS for Website Footer */
 footer {
   background-color: black;
+}
+
+#footer li {
+  list-style-type: none;
 }
 
 footer p {
