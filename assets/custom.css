@@ -576,8 +576,7 @@ nav .logo {
 #trusted-by #brands {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 4rem
 }
@@ -586,13 +585,27 @@ nav .logo {
 }
 
 #trusted-by .brand img {
-  height: 100%;
   -webkit-filter: grayscale();
   filter: grayscale();
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #trusted-by {
+    gap: 3.75rem;
+  }
+
+  #trusted-by #brands {
+    gap: 3.75rem
+  }
+
+  #trusted-by #brands .brand {
+    height: 2.875rem;
+  }
 }
 
 /* CSS for Index Page - contact */
