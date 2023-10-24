@@ -686,9 +686,15 @@ nav .logo {
   margin-bottom: 5.25rem;
 }
 
-#skills > div, #skills > div > div {
+#skills > div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+  gap: 3rem;
+}
+
+#skills > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px,1fr));
   gap: 3rem;
 }
 
