@@ -311,8 +311,8 @@ permalink: /
 
     <div>
       <div class="posts-preview">
+        {% assign post = site.posts | reverse %}
         {% for i in (1..4) %}
-          {% assign post = site.posts | reverse %}
           <div class="post-preview">
             <img src="{{ "assets/img/illustration-dev-mode.svg" | relative_url }}" alt="article picture" />
             <a href="{{post.url}}" class="text-light-grey">
