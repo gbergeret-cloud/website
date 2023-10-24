@@ -116,11 +116,6 @@ button {
   cursor: pointer;
 }
 
-button:hover,
-button:active {
-  border: 1px solid #5A5A5A;
-}
-
 
 .page {
   max-width: 1600px;
