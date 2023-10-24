@@ -38,7 +38,7 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
             {{ highlight.content | strip_html | truncatewords: 30 }}
           </p>
           <a href="{{highlight.url}}">
-            <button>Read more</button>
+            <button type="button">Read more</button>
           </a>
         </div>
       </div>
@@ -55,7 +55,7 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
         </a>
         <p class="text-light-grey">{{ post.content | strip_html | truncatewords: 20 }}</p>
         <a href="{{post.url}}">
-          <button>Read more</button>
+          <button type="button">Read more</button>
         </a>
       </div>
     {% endfor %}
