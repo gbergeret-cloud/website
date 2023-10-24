@@ -87,6 +87,7 @@ a,
 a:hover {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -112,7 +113,14 @@ button {
   font-weight: 700;
   min-width: 6.25rem;
   border: 0;
+  cursor: pointer;
 }
+
+button:hover,
+button:active {
+  border: 1px solid #5A5A5A;
+}
+
 
 .page {
   max-width: 1600px;
@@ -734,6 +742,7 @@ nav .logo {
   align-items: center;
   min-width: 17.75rem;
   width: 17.75rem;
+  gap: 2rem;
 }
 
 #blog-preview .post-preview img {
@@ -820,6 +829,7 @@ nav .logo {
   padding: 0.125rem 0.5rem;
   text-align: center;
   font-weight: 700;
+  margin-left: 1rem;
 }
 
 #blog-page #highlight p {
