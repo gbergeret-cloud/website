@@ -1,4 +1,12 @@
 const swiperInit = () => {
+  let certsWrapper = document.querySelector(
+    "#certifications.swiper .swiper-wrapper"
+  );
+  let certsTransformValue;
+
+  if (!certsWrapper) {
+    return;
+  }
   const certsSwiper = new Swiper("#certifications.swiper", {
     loop: true,
     freeMode: true,
@@ -20,11 +28,6 @@ const swiperInit = () => {
     },
   });
 
-  let certsWrapper = document.querySelector(
-    "#certifications.swiper .swiper-wrapper"
-  );
-  let certsTransformValue;
-
   certsWrapper.addEventListener("mouseenter", (event) => {
     certsSwiper.autoplay.stop();
     certsTransformValue = certsWrapper.style.transform;
@@ -38,6 +41,11 @@ const swiperInit = () => {
     certsWrapper.style.transform = certsTransformValue;
     certsSwiper.autoplay.start();
   });
+
+  let trustedByWrapper = document.querySelector(
+    "#trusted-by .swiper .swiper-wrapper"
+  );
+  let trustedByTransformValue;
 
   const trustedBySwiper = new Swiper("#trusted-by .swiper", {
     grabCursor: true,
@@ -63,11 +71,6 @@ const swiperInit = () => {
       },
     },
   });
-
-  let trustedByWrapper = document.querySelector(
-    "#trusted-by .swiper .swiper-wrapper"
-  );
-  let trustedByTransformValue;
 
   trustedByWrapper.addEventListener("mouseenter", (event) => {
     trustedBySwiper.autoplay.stop();
