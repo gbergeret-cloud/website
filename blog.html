@@ -25,26 +25,26 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
   </div>
   {% assign highlight = site.posts | where: "highlight", true | reverse | first %}
   {% if highlight %}
-  <div id="highlight" class="wrapper preview">
-    <div class="column-2 reverse">
-      <div class="content">
-        <div>
-          <h3>{{ highlight.title }}</h3>
-          <span class="text-s text-light-grey">{{ highlight.date | date_to_string: "ordinal", "US" }}</span>
-          {% if highlight.reading-time %}
-          <span class="reading-time text-s">{{ highlight.reading-time }} read</span>
-          {% endif %}
-          <p class="text-light-grey">
-            {{ highlight.content | strip_html | truncatewords: 30 }}
-          </p>
-          <a href="{{highlight.url}}">
-            <button type="button">Read more</button>
-          </a>
+    <div id="highlight" class="wrapper preview">
+      <div class="column-2 reverse">
+        <div class="content">
+          <div>
+            <h3>{{ highlight.title }}</h3>
+            <span class="text-s text-light-grey">{{ highlight.date | date_to_string: "ordinal", "US" }}</span>
+            {% if highlight.reading-time %}
+              <span class="reading-time text-s">{{ highlight.reading-time }} read</span>
+            {% endif %}
+            <p class="text-light-grey">
+              {{ highlight.content | strip_html | truncatewords: 30 }}
+            </p>
+            <a href="{{highlight.url}}">
+              <button type="button">Read more</button>
+            </a>
+          </div>
         </div>
+        <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
       </div>
-      <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
     </div>
-  </div>
   {% endif %}
   <div id="articles" class="wrapper preview">
     {% for post in site.posts %}
@@ -59,5 +59,33 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
         </a>
       </div>
     {% endfor %}
+  </div>
+  <!-- Pagination links -->
+  <div class="pagination wrapper">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous----
+      </a>
+    {% endif %}
+    <!-- for i in (1..paginator.total_pages) -->
+    {% for i in (1..10) %}
+      <!-- if i == paginator.page -->
+      {% if i == 3 %}
+        <a href="{{ site.url }}/blog/page{{ i }}" class="page_number selected">
+          <!-- paginator.page -->
+          {{ i }}
+        </a>
+      {% else %}
+      <a href="{{ site.url }}/blog/page{{ i }}" class="page_number">
+          {{ i }}
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">
+        ----Next
+      </a>
+    {% endif %}
   </div>
 </div>
