@@ -683,13 +683,13 @@ nav .logo {
 
 #skills > div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 3rem;
 }
 
 #skills > div > div {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px,1fr));
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 3rem;
 }
 
@@ -704,7 +704,8 @@ nav .logo {
 
 @media only screen and (max-width: 768px) {
 
-  #skills > div, #skills > div > div {
+  #skills > div,
+  #skills > div > div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -908,6 +909,32 @@ nav .logo {
     display: block;
     margin-top: 1rem;
   }
+}
+
+/* CSS for Blog page - pagination */
+
+.pagination.wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination.wrapper .page_number {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination.wrapper .page_number.selected {
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
 }
 
 /* CSS for Website Footer */
