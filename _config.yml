@@ -24,6 +24,12 @@ company:
   linkedin: gbergeret-cloud
   github: gbergeret-cloud
 
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -35,7 +41,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - .docker-compose.yml
+  - docker-compose.yml
   - .git
   - .github
   - .editorconfig

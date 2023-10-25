@@ -1,0 +1,63 @@
+---
+title: Blog - GBergeret Cloud Services
+description: GBergeret cloud Services' blog, a place to find the lastest news, ideas and case studies from the worlds of cloud and DevSecOps.
+permalink: /blog
+
+pagination:
+  enabled: true
+  sort_reverse: true
+  permalink: '/:num/'
+  first_page: 2  # Doesn't work
+  offset: 9
+  per_page: 12
+---
+
+<div id="blog-page" class="page">
+  <div id="landing-section" class="wrapperg">
+    <h1 class="plus">Our Blog</h1>
+    <span class="text-m light">News, ideas and case studies from the worlds of cloud and DevSecOps.
+    </span>
+  </div>
+  <div id="articles" class="wrapperg">
+    {% for post in paginator.posts %}
+      <div class="article">
+        <img src="{{ "assets/img/illustration-dev-mode.svg" | relative_url }}" alt="article picture" />
+        <a href="{{post.url}}">
+          {{ post.title }}
+        </a>
+        <p class="text-light-grey">{{ post.content | strip_html | truncatewords: 20 }}</p>
+        <a href="{{post.url}}">
+          <button type="button">Read more</button>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <!-- Pagination links -->
+  <div class="pagination wrapperg">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous----
+      </a>
+    {% endif %}
+    <!-- for i in (1..paginator.total_pages) -->
+    {% for i in (1..10) %}
+      <!-- if i == paginator.page -->
+      {% if i == 3 %}
+        <a href="{{ site.url }}/blog/page{{ i }}" class="page_number selected">
+          <!-- paginator.page -->
+          {{ i }}
+        </a>
+      {% else %}
+      <a href="{{ site.url }}/blog/page{{ i }}" class="page_number">
+          {{ i }}
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">
+        ----Next
+      </a>
+    {% endif %}
+  </div>
+</div>

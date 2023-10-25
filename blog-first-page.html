@@ -1,6 +1,7 @@
 ---
 title: Blog - GBergeret Cloud Services
 description: GBergeret cloud Services' blog, a place to find the lastest news, ideas and case studies from the worlds of cloud and DevOps.
+permalink: /blog
 ---
 
 <div id="blog-page" class="page">
@@ -71,12 +72,12 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
     {% for i in (1..10) %}
       <!-- if i == paginator.page -->
       {% if i == 3 %}
-        <a href="{{ site.url }}/blog/page{{ i }}" class="page_number selected">
+        <a href="{{ site.url }}/blog/{{ i }}" class="page_number selected">
           <!-- paginator.page -->
           {{ i }}
         </a>
       {% else %}
-      <a href="{{ site.url }}/blog/page{{ i }}" class="page_number">
+      <a href="{{ site.url }}/blog/{{ i }}" class="page_number">
           {{ i }}
         </a>
       {% endif %}
