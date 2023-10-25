@@ -1,13 +1,13 @@
 const swiperInit = () => {
   let certsWrapper = document.querySelector(
-    "#certifications.swiper .swiper-wrapper"
+    "#certifications .swiper .swiper-wrapper"
   );
   let certsTransformValue;
 
   if (!certsWrapper) {
     return;
   }
-  const certsSwiper = new Swiper("#certifications.swiper", {
+  const certsSwiper = new Swiper("#certifications .swiper", {
     loop: true,
     freeMode: true,
     spaceBetween: 20,

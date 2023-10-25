@@ -579,7 +579,26 @@ nav .logo {
 
 /* CSS for Index Page - certifications */
 
-#certifications.swiper {
+#certifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7rem;
+}
+
+#certifications .title span {
+  display: flex;
+  padding: 0.375rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  color: #CACACF;
+  border: 1px solid #CACACF;
+}
+
+
+#certifications .swiper {
   overflow: visible;
 }
 
