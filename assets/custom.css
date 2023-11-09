@@ -373,7 +373,6 @@ nav .logo {
   .banner h3,
   .banner p {
     width: 100%;
-    text-align: left;
   }
 }
 
@@ -421,10 +420,6 @@ nav .logo {
 
   .banner .logo {
     height: 3rem;
-  }
-
-  .banner .title {
-    text-align: left;
   }
 
   #scroll-indicator {
@@ -560,11 +555,6 @@ nav .logo {
   .column-2 .illustration {
     background-position: center bottom;
   }
-
-  .column-2 .image-cover {
-    background-size: contain;
-  }
-
 }
 
 .carrousel {
@@ -1057,8 +1047,7 @@ footer a:hover {
   }
 
   #credit {
-    padding: 0 2em 2rem 2rem;
-    text-align: left;
+    padding: 0 1em 1rem 1rem;
     font-size: 14px;
   }
 }
