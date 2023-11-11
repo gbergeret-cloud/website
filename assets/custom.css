@@ -523,6 +523,13 @@ nav .logo {
   grid-area: illustration
 }
 
+
+@media only screen and (min-width: 767px) {
+  .column-2 .image-cover.headshot {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .column-2 {
     gap: 5%;
@@ -558,6 +565,10 @@ nav .logo {
 
   .column-2 .image-cover {
     background-size: contain;
+  }
+
+  .column-2 .image-cover.fullsize {
+    display: none !important;
   }
 
 }
