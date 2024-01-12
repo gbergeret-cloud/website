@@ -1196,7 +1196,7 @@ footer a:hover {
     width:21px;
     height:18px;
     position:absolute;
-    background-image: url("/assets/img/quote.svg")
+    background-image: url("/assets/blog/quote.svg")
 }
 
 #blog-post blockquote::before{
@@ -1253,7 +1253,7 @@ footer a:hover {
 #blog-post #blog-authors .x{
     width:18px;
     height:18px;
-    background-image: url("/assets/img/x.svg");
+    background-image: url("/assets/blog/x.svg");
     background-size:cover;
 }
 
