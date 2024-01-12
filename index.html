@@ -326,8 +326,8 @@ permalink: /
         {% assign posts = site.posts | reverse | slice: 0, 4 %}
         {% for post in posts %}
           <div class="post-preview">
-            <img src="{{ post.cover.thumbnail | relative_url }}" alt="{{ post.cover.alt }}" />
             <a href="{{post.url}}" class="text-light-grey">
+              <img src="{{ post.cover.thumbnail | relative_url }}" alt="{{ post.cover.alt }}" />
               {{ post.title }}</a>
           </div>
         {% endfor %}

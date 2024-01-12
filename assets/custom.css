@@ -582,8 +582,8 @@ nav .logo {
   justify-content: center;
   align-items: center;
   border-radius: 1.25rem;
-  color: #CACACF;
-  border: 1px solid #CACACF;
+  color: #A5A5A5;
+  border: 1px solid #A5A5A5;
 }
 
 .carrousel .swiper {
@@ -821,10 +821,12 @@ nav .logo {
   margin-bottom: 0.75rem;
 }
 
-#blog-page #highlight .reading-time {
+#blog-page #highlight .reading-time,
+#blog-post #reading-time{
   border-radius: 1.25rem;
-  border: 1px solid #000;
-  padding: 0.125rem 0.5rem;
+  border:1px solid #888888;
+  padding:0.3125rem 0.75rem;
+  color:#222222;
   text-align: center;
   font-weight: 700;
   margin-left: 1rem;
@@ -846,7 +848,6 @@ nav .logo {
   justify-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-
 }
 
 #blog-page .article {
@@ -1059,7 +1060,7 @@ footer a:hover {
 
   #credit {
     padding: 0 1em 1rem 1rem;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -1096,14 +1097,6 @@ footer a:hover {
     grid-gap:16px;
 }
 
-#blog-post #reading-time{
-    font-weight:bold;
-    color:#222222;
-    padding:5px 12px;
-    border-radius:20px;
-    border:1px solid #888888;
-}
-
 /* blog content */
 
 #blog-post h1,
@@ -1119,17 +1112,17 @@ footer a:hover {
 }
 
 #blog-post h1{
-    font-size:64px;
+    font-size:4rem;
     text-align:center;
     margin:0;
 }
 
 #blog-post h2{
-    font-size:40px;
+    font-size:2.5rem;
 }
 
 #blog-post h3{
-    font-size:24px;
+    font-size:1.5rem;
 }
 
 #blog-post h2 + h3{
@@ -1139,7 +1132,7 @@ footer a:hover {
 #blog-post h4,
 #blog-post h5,
 #blog-post h6{
-    font-size:16px;
+    font-size:1rem;
 }
 
 #blog-post a{
@@ -1181,7 +1174,7 @@ footer a:hover {
     margin:0 32px;
     text-align:center;
     font-style:italic;
-    font-size:14px;
+    font-size:0.875rem;
 }
 
 #blog-post blockquote{
@@ -1229,8 +1222,8 @@ footer a:hover {
 }
 
 #blog-post #blog-authors #written-by{
-    font-size:14px;
-    color:#A5A5A5;
+    font-size:0.875rem;
+    color: #A5A5A5;
 }
 
 #blog-post #blog-authors h3{
@@ -1238,7 +1231,7 @@ footer a:hover {
 }
 
 #blog-post #blog-authors .job-title{
-    font-size:14px;
+    font-size:0.875rem;
     line-height:1;
 }
 
@@ -1269,23 +1262,23 @@ footer a:hover {
 @media only screen and (max-width: 1024px) {
     #blog-post,
     #blog-post p{
-        font-size:14px;
+        font-size:0.875rem;
     }
 
     #blog-post h1{
-        font-size:32px;
+        font-size: 1.875rem;
     }
 
     #blog-post h2{
-        font-size:24px;
+        font-size: 1.5rem;
     }
 
     #blog-post h3{
-        font-size:16px;
+        font-size: 1rem;
     }
 
     #blog-post #blog-head{
-        padding:40px 0 48px 0;
+        padding: 40px 0 48px 0;
     }
 
     #blog-post #blog-head img{
