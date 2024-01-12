@@ -323,12 +323,12 @@ permalink: /
 
     <div>
       <div class="posts-preview">
-        {% assign post = site.posts | reverse %}
-        {% for i in (1..4) %}
+        {% assign posts = site.posts | reverse | slice: 0, 4 %}
+        {% for post in posts %}
           <div class="post-preview">
-            <img src="{{ "assets/img/illustrations/dev-mode.svg" | relative_url }}" alt="article picture" />
+            <img src="{{ post.cover.thumbnail | relative_url }}" alt="{{ post.cover.alt }}" />
             <a href="{{post.url}}" class="text-light-grey">
-              {{ post[i].title }}</a>
+              {{ post.title }}</a>
           </div>
         {% endfor %}
       </div>

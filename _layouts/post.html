@@ -5,9 +5,9 @@
     {% include navbar.html %}
     <div id="blog-post" class="page wrapper">
       <div id="blog-head">
-        {% if page.cover != nil %}
+        {% if page.cover.original != nil %}
         <div class="image">
-          <img src="{{ page.cover.src }}" alt="{{ page.cover.alt }}">
+          <img src="{{ page.cover.original | relative_url }}" alt="{{ page.cover.alt }}">
         </div>
         {% endif %}
 

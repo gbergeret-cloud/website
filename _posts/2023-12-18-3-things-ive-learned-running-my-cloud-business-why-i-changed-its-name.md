@@ -6,7 +6,10 @@ authors:
   - name: Geoffrey Bergeret
     title: Platform Engineer & DevOps Consultant
     picture: /assets/blog/blog-author-geoffrey.jpg
-reading_time: 3
+cover:
+  alt: Company logo
+  thumbnail: /assets/blog/thumbnails/2023-12-18-3-things-ive-learned-running-my-cloud-business-why-i-changed-its-name.jpg
+reading_time: 4
 categories: news
 tags: platformengineering entrepreneurship devops devsecops cloud cloudnative
 ---
