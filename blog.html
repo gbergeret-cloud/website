@@ -10,7 +10,7 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
     </span>
   </div>
 
-  {% assign highlight = site.posts | where: "highlight", true | reverse | first %}
+  {% assign highlight = site.posts | where: "highlight", true | first %}
   {% if highlight %}
     <div id="highlight" class="wrapper">
       <div class="column-2 reverse">
@@ -18,24 +18,25 @@ description: GBergeret cloud Services' blog, a place to find the lastest news, i
           <div>
             <h3>{{ highlight.title }}</h3>
             <span class="text-s text-light-grey">{{ highlight.date | date_to_string: "ordinal", "US" }}</span>
-            {% if highlight.reading-time %}
-              <span class="reading-time text-s">{{ highlight.reading-time }} read</span>
+            {% if highlight.reading_time %}
+              <span class="reading-time text-s">{{ highlight.reading_time }} min read</span>
             {% endif %}
             <p class="text-light-grey">
-              {{ highlight.content | strip_html | truncatewords: 30 }}
+              {{ highlight.content | strip_html | truncatewords: 60 }}
             </p>
             <a href="{{highlight.url}}">
               <button type="button">Read more</button>
             </a>
           </div>
         </div>
-        <div class="illustration" style="background-image: url('{{ "assets/img/illustration-dev-mode.svg" | relative_url }}')"></div>
+        <div class="illustration" style="background-image: url('{{ highlight.cover.thumbnail | relative_url }}')"></div>
       </div>
     </div>
   {% endif %}
 
   <div id="articles" class="wrapper">
-    {% for post in site.posts %}
+    {% assign posts = site.posts | where: "highlight", nil %}
+    {% for post in posts %}
       <div class="article">
         <a href="{{post.url}}">
           {% if post.cover.thumbnail %}
