@@ -806,6 +806,10 @@ nav .logo {
 
 /* CSS for Blog Page */
 
+#blog-page {
+  min-height: calc(100vh - 20rem);
+}
+
 #blog-page h1 {
   margin-bottom: 1rem;
 }
@@ -863,7 +867,7 @@ nav .logo {
   object-fit: contain;
 }
 
-#blog-page .article a {
+#blog-page .article .title {
   margin: 0.25rem 0;
   font-weight: 700;
 }
