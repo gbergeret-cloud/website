@@ -30,14 +30,20 @@
           <div class="wrap">
           {% assign authors_count = page.authors | size %}
           {% for author in page.authors %}
-            <div class="author">
-              <div class="profile" \
-                style="background-image:url('{{author.picture}}')"></div>
-              <div class="name">
-                <h3>{{ author.name }}</h3>
-                <span class="job-title">{{ author.title }}</span>
+            {% if author.contact != nil %}
+            <a href="{{ author.contact }}">
+            {% else %}
+            <a href="{{ site.url }}#contact">
+            {% endif %}
+              <div class="author">
+                <div class="profile" \
+                  style="background-image:url('{{ author.picture }}')"></div>
+                <div class="name">
+                  <h3>{{ author.name }}</h3>
+                  <span class="job-title">{{ author.title }}</span>
+                </div>
               </div>
-            </div>
+            </a>
 
             {% if authors_count > 1 and  forloop.last == false %}
               <div class="x">
