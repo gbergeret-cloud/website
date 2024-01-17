@@ -321,21 +321,7 @@ permalink: /
     </h2>
     <p class="text-light-grey">News, ideas and case studies from the worlds of cloud and DevOps.</p>
 
-    <div>
-      <div class="posts-preview">
-        {% assign posts = site.posts | reverse | slice: 0, 4 %}
-        {% for post in posts %}
-          <div class="post-preview">
-            <a href="{{post.url}}" class="text-light-grey">
-              <img src="{{ post.cover.thumbnail | relative_url }}" alt="{{ post.cover.alt }}" />
-              {{ post.title }}</a>
-          </div>
-        {% endfor %}
-      </div>
-      <a href="{{ site.url }}/blog">
-        <button type="button" class="see-more">See more</button>
-      </a>
-    </div>
+    {% include blog-preview.html %}
   </div>
 
   <div id="contact" class="wrapper">
