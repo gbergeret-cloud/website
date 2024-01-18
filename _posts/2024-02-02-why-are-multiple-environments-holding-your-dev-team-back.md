@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Why are multiple environments holding your dev team back?
-date:  2024-02-05 08:59:36 +0100
+date:  2024-01-19 08:59:36 +0100
 authors:
   - name: Geoffrey Bergeret
     title: Platform Engineer & DevOps Consultant
     picture: /assets/blog/blog-author-geoffrey.jpg
 cover:
-  alt: Company logo (feat with Mono-Env)
-  original: /assets/blog/covers/2024-02-05-why-are-multiple-environments-holding-your-dev-team-back.jpg
-  thumbnail: /assets/blog/thumbnails/2024-02-05-why-are-multiple-environments-holding-your-dev-team-back.jpg
+  alt: Mono-Env Cover
+  thumbnail: /assets/blog/thumbnails/2024-02-02-why-are-multiple-environments-holding-your-dev-team-back.svg
 reading_time: 3
 categories: ideas
 tags: platformengineering devops devsecops cloud cloudnative
@@ -57,7 +56,8 @@ build in a higher standard from the start.
 
 I've noticed quite a few organisations already running Mono-environments to some
 extent, even if they aren’t really promoting it. This includes two of my clients,
-Harvie, a grocery delivery service, and Cintra, a payroll and HR tool.
+Harvie, a [grocery delivery service](https://harvie.farm), and Cintra, a
+[payroll and HR software](https://www.cintra.co.uk).
 Ultimately, more efficient approaches like this come naturally as part of a
 strong DevOps culture. When you have good engineering practices, along with
 healthy CI/CD pipelines, you’ll inevitably reduce the gap between ideas and live
