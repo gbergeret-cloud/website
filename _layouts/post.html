@@ -31,7 +31,7 @@
           {% assign authors_count = page.authors | size %}
           {% for author in page.authors %}
             {% if author.contact != nil %}
-            <a href="{{ author.contact }}">
+            <a target="_blank" href="{{ author.contact }}">
             {% else %}
             <a href="{{ site.url }}#contact">
             {% endif %}

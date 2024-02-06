@@ -1202,9 +1202,33 @@ footer a:hover {
 }
 
 #blog-post blockquote::after{
-    bottom:52px;
+    bottom:24px;
     right:30px;
     transform:rotate(180deg);
+}
+
+#blog-post #blog-content blockquote.below-caption p {
+  margin: 0px;
+}
+
+#blog-post #blog-content blockquote.testimonial {
+  margin-top: 64px;
+}
+
+#blog-post blockquote em.caption{
+    font-style:italic;
+    font-size: 1rem;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+#blog-post blockquote em.caption::before{
+    content: "\002014";
+}
+
+#blog-post blockquote em.caption a{
+    text-decoration: none;
+    color: #787878;
 }
 
 #blog-post ul{
@@ -1300,6 +1324,14 @@ footer a:hover {
 
     #blog-post blockquote::after {
         right: 0;
+    }
+
+    #blog-post blockquote em.caption{
+        font-style:italic;
+        font-size: 0.875rem;
+        padding-top: 7px;
+        text-decoration: none;
+        color: #787878;
     }
 
     #blog-post #blog-authors .wrap{
