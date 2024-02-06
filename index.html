@@ -361,7 +361,7 @@ permalink: /
 
     <div>
       <div class="posts-preview">
-        {% assign posts = site.posts | reverse | slice: 0, 4 %}
+        {% assign posts = site.posts | slice: 0, 4 %}
         {% for post in posts %}
           <div class="post-preview">
             <a href="{{post.url}}" class="text-light-grey">
