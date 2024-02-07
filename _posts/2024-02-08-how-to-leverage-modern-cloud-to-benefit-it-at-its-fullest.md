@@ -14,6 +14,17 @@ cover:
   alt: Cintra Logo (feat with GBergeret Cloud Services)
   original: assets/blog/covers/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
   thumbnail: assets/blog/thumbnails/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
+testimonial:
+  message: |
+    Geoffrey and Mark allowed us to consolidate our customer-facing platforms
+    beyond the initial project scope, while continuing to spread DevOps culture
+    throughout our company. With their help, we’re in a far better position to
+    meet our ambitious growth plans.
+  author:
+    name: Seb Aspland
+    title: Chief Technology Officer
+    company: Cintra
+    contact: https://www.linkedin.com/in/sebaspland/
 reading_time: 4
 categories: casestudy
 ---
@@ -102,11 +113,3 @@ security, flexibility and visibility it needed to grow. Cintra’s infrastructur
 is now far more resilient, with modern cloud features baked into its platform. We
 empowered Cintra’s developers by removing a whole range of bottlenecks, so they
 can move faster, be more efficient and live and breathe DevOps.
-
-> Geoffrey and Mark allowed us to consolidate our customer-facing platforms
-> beyond the initial project scope, while continuing to spread DevOps culture
-> throughout our company. With their help, we’re in a far better position to meet
-> our ambitious growth plans. <br />
-> *[Seb Aspland, Chief Technology Officer at Cintra](https://www.linkedin.com/in/sebaspland/)*{: .caption }
-{: .below-caption .testimonial }
-
