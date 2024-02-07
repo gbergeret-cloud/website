@@ -33,9 +33,9 @@ Cintra provides award-winning payroll and HR services to a wide range of
 organisations. The company has been an industry leader for over four decades,
 while continuing to stay innovative. After launching Cintra Cloud, a public
 cloud-based version of its
-[payroll software](https://www.cintra.co.uk/payroll-software), Cintra wanted to
-reap the same benefits across the board. So it decided to consolidate all of its
-customer-facing infrastructure in a public cloud.
+[payroll software](https://www.cintra.co.uk/payroll-software){:target="_blank"},
+Cintra wanted to reap the same benefits across the board. So it decided to
+consolidate all of its customer-facing infrastructure in a public cloud.
 
 With our help, Cintra was able to take full advantage of modern cloud technology.
 By the end of the project, the company was in a far stronger position from a
@@ -71,7 +71,7 @@ hard to catch issues as they emerged.
 We focused on building Cintra’s infrastructure to last, while working in an
 iterative, product-oriented way. Cintra set a hard deadline, so we decided to
 take a
-"[lift and shift](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-rehosting/welcome.html)"
+"[lift and shift](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-rehosting/welcome.html){:target="_blank"}"
 approach for the project’s initial phase. While this part of the migration wasn't
 the end goal, it cleared the way for us to deal with the company’s wider
 automation and monitoring challenges.
@@ -89,8 +89,8 @@ hit the deadline.
 
 Ultimately we rebuilt Cintra’s entire legacy platform. Using modern cloud API
 capabilities, we refined the company’s cloud resources management using
-[Infrastructure as Code](https://aws.amazon.com/what-is/iac/) (IaC). Combined
-with a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+[Infrastructure as Code](https://aws.amazon.com/what-is/iac/){:target="_blank"}
+(IaC). Combined with a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests){:target="_blank"}
 process to streamline changes, these measures have allowed Cintra’s teams to
 benefit from full automation – a huge leap forward.
 

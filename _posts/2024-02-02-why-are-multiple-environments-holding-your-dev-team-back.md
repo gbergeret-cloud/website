@@ -19,9 +19,9 @@ about new ways to save resources, reduce risk and roll out features in a more
 streamlined way.
 
 That's why I'm really excited about the idea of a
-[Mono-environment](https://monoenv.tech/), a more efficient approach to
-production. It’s a method I’ve used successfully at multiple companies, which
-means you can deploy to production over 100 times a day.
+[Mono-environment](https://monoenv.tech/){:target="_blank"}, a more efficient
+approach to production. It’s a method I’ve used successfully at multiple
+companies, which means you can deploy to production over 100 times a day.
 
 ## What is a Mono-environment?
 
@@ -56,8 +56,8 @@ build in a higher standard from the start.
 
 I've noticed quite a few organisations already running Mono-environments to some
 extent, even if they aren’t really promoting it. This includes two of my clients,
-Harvie, a [grocery delivery service](https://harvie.farm), and Cintra, a
-[payroll and HR software](https://www.cintra.co.uk).
+Harvie, a [grocery delivery service](https://harvie.farm){:target="_blank"}, and
+Cintra, a [payroll and HR software](https://www.cintra.co.uk){:target="_blank"}.
 Ultimately, more efficient approaches like this come naturally as part of a
 strong DevOps culture. When you have good engineering practices, along with
 healthy CI/CD pipelines, you’ll inevitably reduce the gap between ideas and live
@@ -66,7 +66,7 @@ product features.
 If you'd like to learn more about a Mono-environment or production-only approach,
 [I'd love to discuss it with you]({{ site.url }}#contact), even if it isn’t right
 for your business just yet. But for now, I just want to spread the word. You can
-read more about [running a Mono-environment here](https://monoenv.tech), in a
-manifesto I’ve co-authored with my old colleagues Paolo Escobar and Michael
+read more about [running a Mono-environment here](https://monoenv.tech){:target="_blank"},
+in a manifesto I’ve co-authored with my old colleagues Paolo Escobar and Michael
 Hancock, who are both using Mono-environments in their current engineering
 leadership roles.
