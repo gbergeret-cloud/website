@@ -1207,10 +1207,6 @@ footer a:hover {
     transform:rotate(180deg);
 }
 
-#blog-post #blog-content blockquote.below-caption p {
-  margin: 0px;
-}
-
 #blog-post #blog-content blockquote.testimonial {
   margin-top: 64px;
 }

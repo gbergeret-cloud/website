@@ -24,6 +24,21 @@
       </div>
       <div id="blog-content">
         {{ content }}
+
+        {% if page.testimonial != nil %}
+        {% assign testimonial = page.testimonial %}
+        <blockquote class="testimonial">
+          {{ testimonial.message }}<br />
+          <em class="caption">
+            <a target="_blank" href="{{ testimonial.author.contact }}">
+                {{ testimonial.author.name }},
+                {{ testimonial.author.title }}
+                at {{ testimonial.author.company }}
+            </a>
+          </em>
+        </blockquote>
+        {% endif %}
+
         <div id="blog-authors">
           <p id="written-by">Written by:</p>
 
