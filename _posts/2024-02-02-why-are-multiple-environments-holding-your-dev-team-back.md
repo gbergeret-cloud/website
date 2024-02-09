@@ -5,10 +5,10 @@ date:  2024-02-02 08:59:36 +0100
 authors:
   - name: Geoffrey Bergeret
     title: Platform Engineer & DevOps Consultant
-    picture: /assets/blog/blog-author-geoffrey.jpg
+    picture: /assets/posts/authors/geoffrey-bergeret.jpg
 cover:
   alt: Mono-Env Cover
-  thumbnail: /assets/blog/thumbnails/2024-02-02-why-are-multiple-environments-holding-your-dev-team-back.svg
+  thumbnail: /assets/posts/thumbnails/2024-02-02-why-are-multiple-environments-holding-your-dev-team-back.svg
 reading_time: 3
 categories: ideas
 tags: platformengineering devops devsecops cloud cloudnative

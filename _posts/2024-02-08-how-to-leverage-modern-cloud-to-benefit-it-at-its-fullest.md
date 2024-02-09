@@ -5,15 +5,15 @@ date:  2024-02-08 08:59:36 +0100
 authors:
   - name: Geoffrey Bergeret
     title: Platform Engineer & DevOps Consultant
-    picture: /assets/blog/blog-author-geoffrey.jpg
+    picture: /assets/posts/authors/geoffrey-bergeret.jpg
   - name: Mark Letcher
     title: WinOps & Platform Engineer
-    picture: /assets/blog/blog-author-mark.jpg
+    picture: /assets/posts/authors/mark-letcher.jpg
     contact: https://www.linkedin.com/in/mark-l-273b927b/
 cover:
   alt: Cintra Logo (feat with GBergeret Cloud Services)
-  original: assets/blog/covers/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
-  thumbnail: assets/blog/thumbnails/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
+  original: assets/posts/covers/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
+  thumbnail: assets/posts/thumbnails/2024-02-08-how-to-leverage-modern-cloud-to-benefit-it-at-its-fullest.svg
 testimonial:
   message: |
     Geoffrey and Mark allowed us to consolidate our customer-facing platforms
