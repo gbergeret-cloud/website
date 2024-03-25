@@ -592,8 +592,8 @@ nav .logo {
 }
 
 .carrousel .swiper img {
-  -webkit-filter: grayscale();
-  filter: grayscale();
+  /* -webkit-filter: grayscale(); */
+  /* filter: grayscale(); */
   display: block;
   object-fit: contain;
 }
@@ -613,7 +613,6 @@ nav .logo {
 
 /* CSS for Index Page - certifications */
 
-
 #certifications .certification {
   height: 9.5rem;
   width: 18rem;
@@ -625,7 +624,7 @@ nav .logo {
 }
 
 #certifications .certification img {
-  height: 3.75rem;
+  height: 7rem;
 }
 
 #certifications .certification span {
@@ -636,16 +635,11 @@ nav .logo {
   #certifications .certification {
     height: 6.75rem;
     width: 10rem;
-    gap: 1.5rem
-  }
-
-  #certifications .certification img {
-    height: 3.5rem;
+    gap: 1rem
   }
 }
 
 /* CSS for Index Page - trusted-by */
-
 
 #trusted-by #brands .brand {
   display: inline-block;
